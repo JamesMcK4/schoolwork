@@ -1,0 +1,922 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Assignment 2 Notebook},
+  pdfauthor={James McKinlay, B00867096},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Assignment 2 Notebook}
+\author{James McKinlay, B00867096}
+\date{}
+
+\begin{document}
+\maketitle
+
+\hypertarget{introduction}{%
+\subsection{Introduction:}\label{introduction}}
+
+I have decided to choose the automobile directory from the list of
+choices given. This data set contains details and data about the
+automobiles from 1985. This data set contains 26 different attributes
+for automobiles, ranging from safety ratings, insurance risks, vehicle
+specifications, and average loss information. It contains this
+information on a number of different manufacturers, some located in
+North America, some from Europe, and some from Asia.\\
+\textbf{I will be trying to determine:}\\
+1)Which manufacturer has the best vehicles in the categories of engine
+size, price, highway-mpg and city-mpg.\\
+2)The correlation between highway and city mpg, price of vehicle, and
+which manufacturer rates the highest.\\
+3)The correlation between engine size and both highway and city mpg.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(tidyverse)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## -- Attaching packages --------------------------------------- tidyverse 1.3.2 --
+## v ggplot2 3.3.6      v purrr   0.3.4 
+## v tibble  3.1.8      v dplyr   1.0.10
+## v tidyr   1.2.1      v stringr 1.4.1 
+## v readr   2.1.2      v forcats 0.5.2 
+## -- Conflicts ------------------------------------------ tidyverse_conflicts() --
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()
+\end{verbatim}
+
+Reading in the data set
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{import\_data }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"C:/Users/jmcki/OneDrive/Desktop/School/3141/Assignment2/imports{-}85.data"}\NormalTok{)}
+\NormalTok{import\_names }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"C:/Users/jmcki/OneDrive/Desktop/School/3141/Assignment2/imports{-}85.names"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{data-cleaning}{%
+\subsection{Data Cleaning:}\label{data-cleaning}}
+
+In this section of code, I am retrieving the column names from the
+.names file and attaching them to the data frame. To do this I initially
+created a vector with the text from the .names file, then split the
+period and space from the name, as well as the colon. I then trimmed out
+the empty lines (lines 4 to 6 respectively) which were in place because
+of another column, and added the names to the data frame import\_data.\\
+I also cleaned up the columns, as there were several sections of missing
+data (shown as a ``?'' in the data set), and replaced the missing data
+with an NA.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#import\_data}
+\NormalTok{text }\OtherTok{\textless{}{-}} \FunctionTok{read\_lines}\NormalTok{(}\StringTok{"C:/Users/jmcki/OneDrive/Desktop/School/3141/Assignment2/imports{-}85.names"}\NormalTok{)}
+\CommentTok{\#text[61:89]}
+\NormalTok{names }\OtherTok{\textless{}{-}} \FunctionTok{str\_split\_fixed}\NormalTok{(text[}\DecValTok{61}\SpecialCharTok{:}\DecValTok{89}\NormalTok{], }\StringTok{"}\SpecialCharTok{\textbackslash{}\textbackslash{}}\StringTok{. "}\NormalTok{,}\AttributeTok{n=}\DecValTok{2}\NormalTok{)[,}\DecValTok{2}\NormalTok{]}
+\NormalTok{names }\OtherTok{\textless{}{-}} \FunctionTok{str\_split\_fixed}\NormalTok{(names, }\StringTok{":"}\NormalTok{, }\AttributeTok{n=}\DecValTok{2}\NormalTok{)[,}\DecValTok{1}\NormalTok{]}
+\NormalTok{names }\OtherTok{\textless{}{-}}\NormalTok{ names[}\SpecialCharTok{{-}}\DecValTok{4}\SpecialCharTok{:{-}}\DecValTok{6}\NormalTok{]}
+\FunctionTok{colnames}\NormalTok{(import\_data)[}\DecValTok{1}\SpecialCharTok{:}\DecValTok{26}\NormalTok{] }\OtherTok{\textless{}{-}}\NormalTok{ names}
+\CommentTok{\#which(import\_data=="?")}
+\NormalTok{import\_data }\OtherTok{\textless{}{-}} \FunctionTok{replace}\NormalTok{(import\_data, import\_data}\SpecialCharTok{==}\StringTok{"?"}\NormalTok{, }\ConstantTok{NA}\NormalTok{)}
+\NormalTok{import\_data[, }\FunctionTok{c}\NormalTok{(}\DecValTok{26}\NormalTok{)] }\OtherTok{\textless{}{-}} \FunctionTok{sapply}\NormalTok{(import\_data[, }\FunctionTok{c}\NormalTok{(}\DecValTok{26}\NormalTok{)], as.numeric)}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{univariate-analysis}{%
+\subsubsection{Univariate Analysis}\label{univariate-analysis}}
+
+\hypertarget{summary-of-data}{%
+\paragraph{Summary of data:}\label{summary-of-data}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{summary}\NormalTok{(import\_data)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##    symboling       normalized-losses      make            fuel-type        
+##  Min.   :-2.0000   Length:204         Length:204         Length:204        
+##  1st Qu.: 0.0000   Class :character   Class :character   Class :character  
+##  Median : 1.0000   Mode  :character   Mode  :character   Mode  :character  
+##  Mean   : 0.8235                                                           
+##  3rd Qu.: 2.0000                                                           
+##  Max.   : 3.0000                                                           
+##                                                                            
+##   aspiration        num-of-doors        body-style        drive-wheels      
+##  Length:204         Length:204         Length:204         Length:204        
+##  Class :character   Class :character   Class :character   Class :character  
+##  Mode  :character   Mode  :character   Mode  :character   Mode  :character  
+##                                                                             
+##                                                                             
+##                                                                             
+##                                                                             
+##  engine-location      wheel-base         length          width      
+##  Length:204         Min.   : 86.60   Min.   :141.1   Min.   :60.30  
+##  Class :character   1st Qu.: 94.50   1st Qu.:166.3   1st Qu.:64.08  
+##  Mode  :character   Median : 97.00   Median :173.2   Median :65.50  
+##                     Mean   : 98.81   Mean   :174.1   Mean   :65.92  
+##                     3rd Qu.:102.40   3rd Qu.:183.2   3rd Qu.:66.90  
+##                     Max.   :120.90   Max.   :208.1   Max.   :72.30  
+##                                                                     
+##      height       curb-weight   engine-type        num-of-cylinders  
+##  Min.   :47.80   Min.   :1488   Length:204         Length:204        
+##  1st Qu.:52.00   1st Qu.:2145   Class :character   Class :character  
+##  Median :54.10   Median :2414   Mode  :character   Mode  :character  
+##  Mean   :53.75   Mean   :2556                                        
+##  3rd Qu.:55.50   3rd Qu.:2939                                        
+##  Max.   :59.80   Max.   :4066                                        
+##                                                                      
+##   engine-size    fuel-system            bore              stroke         
+##  Min.   : 61.0   Length:204         Length:204         Length:204        
+##  1st Qu.: 97.0   Class :character   Class :character   Class :character  
+##  Median :119.5   Mode  :character   Mode  :character   Mode  :character  
+##  Mean   :126.9                                                           
+##  3rd Qu.:142.0                                                           
+##  Max.   :326.0                                                           
+##                                                                          
+##  compression-ratio  horsepower          peak-rpm            city-mpg    
+##  Min.   : 7.000    Length:204         Length:204         Min.   :13.00  
+##  1st Qu.: 8.575    Class :character   Class :character   1st Qu.:19.00  
+##  Median : 9.000    Mode  :character   Mode  :character   Median :24.00  
+##  Mean   :10.148                                          Mean   :25.24  
+##  3rd Qu.: 9.400                                          3rd Qu.:30.00  
+##  Max.   :23.000                                          Max.   :49.00  
+##                                                                         
+##   highway-mpg        price      
+##  Min.   :16.00   Min.   : 5118  
+##  1st Qu.:25.00   1st Qu.: 7775  
+##  Median :30.00   Median :10270  
+##  Mean   :30.77   Mean   :13206  
+##  3rd Qu.:34.50   3rd Qu.:16501  
+##  Max.   :54.00   Max.   :45400  
+##                  NA's   :4
+\end{verbatim}
+
+\hypertarget{mean-data}{%
+\paragraph{Mean data:}\label{mean-data}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{mean\_hw\_mpg }\OtherTok{\textless{}{-}} \FunctionTok{mean}\NormalTok{(import\_data}\SpecialCharTok{$}\StringTok{\textasciigrave{}}\AttributeTok{highway{-}mpg}\StringTok{\textasciigrave{}}\NormalTok{)}
+\NormalTok{mean\_city\_mpg }\OtherTok{\textless{}{-}} \FunctionTok{mean}\NormalTok{(import\_data}\SpecialCharTok{$}\StringTok{\textasciigrave{}}\AttributeTok{city{-}mpg}\StringTok{\textasciigrave{}}\NormalTok{)}
+\NormalTok{mean\_price }\OtherTok{\textless{}{-}} \FunctionTok{mean}\NormalTok{(import\_data}\SpecialCharTok{$}\StringTok{\textasciigrave{}}\AttributeTok{price}\StringTok{\textasciigrave{}}\NormalTok{, }\AttributeTok{na.rm=}\ConstantTok{TRUE}\NormalTok{)}
+\NormalTok{mean\_engine\_size }\OtherTok{\textless{}{-}} \FunctionTok{mean}\NormalTok{(import\_data}\SpecialCharTok{$}\StringTok{\textasciigrave{}}\AttributeTok{engine{-}size}\StringTok{\textasciigrave{}}\NormalTok{, }\AttributeTok{na.rm=}\ConstantTok{TRUE}\NormalTok{)}
+\FunctionTok{print}\NormalTok{(mean\_city\_mpg)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 25.2402
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{print}\NormalTok{(mean\_hw\_mpg)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 30.76961
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{print}\NormalTok{(mean\_price)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 13205.69
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{print}\NormalTok{(mean\_engine\_size)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 126.8922
+\end{verbatim}
+
+From the data above, I can conclude that there is an average city mpg of
+25.24mpg, an average highway mpg of 30.77mpg, an average price of
+\$13205.69, and an average engine size of 126.89 across all vehicles in
+the data set. \n
+
+\hypertarget{median-data}{%
+\paragraph{Median data:}\label{median-data}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{median\_city\_mpg }\OtherTok{\textless{}{-}} \FunctionTok{median}\NormalTok{(import\_data}\SpecialCharTok{$}\StringTok{\textasciigrave{}}\AttributeTok{city{-}mpg}\StringTok{\textasciigrave{}}\NormalTok{)}
+\NormalTok{median\_hw\_mpg }\OtherTok{\textless{}{-}} \FunctionTok{median}\NormalTok{(import\_data}\SpecialCharTok{$}\StringTok{\textasciigrave{}}\AttributeTok{highway{-}mpg}\StringTok{\textasciigrave{}}\NormalTok{)}
+\NormalTok{median\_price }\OtherTok{\textless{}{-}} \FunctionTok{median}\NormalTok{(import\_data}\SpecialCharTok{$}\NormalTok{price, }\AttributeTok{na.rm=}\ConstantTok{TRUE}\NormalTok{)}
+\NormalTok{median\_engine\_size }\OtherTok{\textless{}{-}} \FunctionTok{median}\NormalTok{(import\_data}\SpecialCharTok{$}\StringTok{\textasciigrave{}}\AttributeTok{engine{-}size}\StringTok{\textasciigrave{}}\NormalTok{, }\AttributeTok{na.rm=}\ConstantTok{TRUE}\NormalTok{)}
+\FunctionTok{print}\NormalTok{(median\_hw\_mpg)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 30
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{print}\NormalTok{(median\_city\_mpg)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 24
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{print}\NormalTok{(median\_price)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 10270
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{print}\NormalTok{(median\_engine\_size)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 119.5
+\end{verbatim}
+
+From the data above, I can conclude that there is a median city mpg of
+24, a median highway mpg of 30, a median price of \$10270, and a median
+engine size of 119.5.\n
+
+\hypertarget{max-min-and-range}{%
+\paragraph{Max, min, and range:}\label{max-min-and-range}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{max\_hw\_mpg }\OtherTok{\textless{}{-}} \FunctionTok{max}\NormalTok{(import\_data}\SpecialCharTok{$}\StringTok{\textasciigrave{}}\AttributeTok{highway{-}mpg}\StringTok{\textasciigrave{}}\NormalTok{)}
+\NormalTok{min\_hw\_mpg }\OtherTok{\textless{}{-}} \FunctionTok{min}\NormalTok{(import\_data}\SpecialCharTok{$}\StringTok{\textasciigrave{}}\AttributeTok{highway{-}mpg}\StringTok{\textasciigrave{}}\NormalTok{)}
+\NormalTok{max\_city\_mpg }\OtherTok{\textless{}{-}} \FunctionTok{max}\NormalTok{(import\_data}\SpecialCharTok{$}\StringTok{\textasciigrave{}}\AttributeTok{city{-}mpg}\StringTok{\textasciigrave{}}\NormalTok{)}
+\NormalTok{min\_city\_mpg }\OtherTok{\textless{}{-}} \FunctionTok{min}\NormalTok{(import\_data}\SpecialCharTok{$}\StringTok{\textasciigrave{}}\AttributeTok{city{-}mpg}\StringTok{\textasciigrave{}}\NormalTok{)}
+\NormalTok{max\_price }\OtherTok{\textless{}{-}} \FunctionTok{max}\NormalTok{(import\_data}\SpecialCharTok{$}\NormalTok{price, }\AttributeTok{na.rm=}\ConstantTok{TRUE}\NormalTok{)}
+\NormalTok{min\_price }\OtherTok{\textless{}{-}} \FunctionTok{min}\NormalTok{(import\_data}\SpecialCharTok{$}\NormalTok{price, }\AttributeTok{na.rm=}\ConstantTok{TRUE}\NormalTok{)}
+\NormalTok{max\_engine\_size }\OtherTok{\textless{}{-}} \FunctionTok{max}\NormalTok{(import\_data}\SpecialCharTok{$}\StringTok{\textasciigrave{}}\AttributeTok{engine{-}size}\StringTok{\textasciigrave{}}\NormalTok{, }\AttributeTok{na.rm=}\ConstantTok{TRUE}\NormalTok{)}
+\NormalTok{min\_engine\_size }\OtherTok{\textless{}{-}} \FunctionTok{min}\NormalTok{(import\_data}\SpecialCharTok{$}\StringTok{\textasciigrave{}}\AttributeTok{engine{-}size}\StringTok{\textasciigrave{}}\NormalTok{, }\AttributeTok{na.rm=}\ConstantTok{TRUE}\NormalTok{)}
+\NormalTok{range\_hw\_mpg }\OtherTok{\textless{}{-}}\NormalTok{ max\_hw\_mpg }\SpecialCharTok{{-}}\NormalTok{ min\_hw\_mpg}
+\NormalTok{range\_city\_mpg }\OtherTok{\textless{}{-}}\NormalTok{ max\_city\_mpg }\SpecialCharTok{{-}}\NormalTok{ min\_city\_mpg}
+\NormalTok{range\_price }\OtherTok{\textless{}{-}}\NormalTok{ max\_price }\SpecialCharTok{{-}}\NormalTok{ min\_price}
+\NormalTok{range\_engine\_size }\OtherTok{\textless{}{-}}\NormalTok{ max\_engine\_size }\SpecialCharTok{{-}}\NormalTok{ min\_engine\_size}
+
+\FunctionTok{print}\NormalTok{(max\_hw\_mpg)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 54
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{print}\NormalTok{(min\_hw\_mpg)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 16
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{print}\NormalTok{(range\_hw\_mpg)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 38
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{print}\NormalTok{(max\_city\_mpg)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 49
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{print}\NormalTok{(min\_city\_mpg)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 13
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{print}\NormalTok{(range\_city\_mpg)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 36
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{print}\NormalTok{(max\_price)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 45400
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{print}\NormalTok{(min\_price)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 5118
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{print}\NormalTok{(range\_price)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 40282
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{print}\NormalTok{(max\_engine\_size)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 326
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{print}\NormalTok{(min\_engine\_size)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 61
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{print}\NormalTok{(range\_engine\_size)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 265
+\end{verbatim}
+
+There is a range of 38mpg across vehicles for highway driving with a
+maximum of 54mpg and a minimum of 16mpg, and a 36mpg for city driving
+with a maximum of 49mpg and a minimum of 13mpg. There is also a range of
+\$40282 between all vehicles in the data set, with a maximum price of
+\$45400 and a minimum price of \$5118. Finally, there is a range of 265
+across all engine sizes, with the maximum size being 326 and the minimum
+size being 61.\n
+
+\hypertarget{tibbles-for-use-in-ggplots}{%
+\paragraph{Tibbles for use in
+ggplots:}\label{tibbles-for-use-in-ggplots}}
+
+In this section, I am manipulating some specific mean data into its own
+vectors for later use.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{hw\_mpg }\OtherTok{\textless{}{-}}\NormalTok{ import\_data }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{group\_by}\NormalTok{(make) }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{summarise}\NormalTok{(}\AttributeTok{mean\_hw\_mpg =} \FunctionTok{mean}\NormalTok{(}\StringTok{\textasciigrave{}}\AttributeTok{highway{-}mpg}\StringTok{\textasciigrave{}}\NormalTok{))}
+\NormalTok{city\_mpg }\OtherTok{\textless{}{-}}\NormalTok{ import\_data }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{group\_by}\NormalTok{(make) }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{summarise}\NormalTok{(}\AttributeTok{mean\_city\_mpg =} \FunctionTok{mean}\NormalTok{(}\StringTok{\textasciigrave{}}\AttributeTok{city{-}mpg}\StringTok{\textasciigrave{}}\NormalTok{))}
+\NormalTok{price\_ }\OtherTok{\textless{}{-}}\NormalTok{ import\_data }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{group\_by}\NormalTok{(make) }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{summarise}\NormalTok{(}\AttributeTok{price=}\FunctionTok{mean}\NormalTok{(}\StringTok{\textasciigrave{}}\AttributeTok{price}\StringTok{\textasciigrave{}}\NormalTok{))}
+\NormalTok{hw\_mpg}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 22 x 2
+##    make          mean_hw_mpg
+##    <chr>               <dbl>
+##  1 alfa-romero          26.5
+##  2 audi                 24.1
+##  3 bmw                  25.4
+##  4 chevrolet            46.3
+##  5 dodge                34.1
+##  6 honda                35.5
+##  7 isuzu                36  
+##  8 jaguar               18.3
+##  9 mazda                31.9
+## 10 mercedes-benz        21  
+## # ... with 12 more rows
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{city\_mpg}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 22 x 2
+##    make          mean_city_mpg
+##    <chr>                 <dbl>
+##  1 alfa-romero            20  
+##  2 audi                   18.9
+##  3 bmw                    19.4
+##  4 chevrolet              41  
+##  5 dodge                  28  
+##  6 honda                  30.4
+##  7 isuzu                  31  
+##  8 jaguar                 14.3
+##  9 mazda                  25.7
+## 10 mercedes-benz          18.5
+## # ... with 12 more rows
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{price\_}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 22 x 2
+##    make           price
+##    <chr>          <dbl>
+##  1 alfa-romero   16500 
+##  2 audi             NA 
+##  3 bmw           26119.
+##  4 chevrolet      6007 
+##  5 dodge          7875.
+##  6 honda          8185.
+##  7 isuzu            NA 
+##  8 jaguar        34600 
+##  9 mazda         10653.
+## 10 mercedes-benz 33647 
+## # ... with 12 more rows
+\end{verbatim}
+
+\hypertarget{tables-of-import-data-to-be-used-make-engine-size-price-highway-and-city-mpg}{%
+\paragraph{Tables of import data to be used (make, engine size, price,
+highway and city
+mpg):}\label{tables-of-import-data-to-be-used-make-engine-size-price-highway-and-city-mpg}}
+
+Number of vehicles by make for each manufacturer in the data set
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{table}\NormalTok{(import\_data}\SpecialCharTok{$}\NormalTok{make)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+##   alfa-romero          audi           bmw     chevrolet         dodge 
+##             2             7             8             3             9 
+##         honda         isuzu        jaguar         mazda mercedes-benz 
+##            13             4             3            17             8 
+##       mercury    mitsubishi        nissan        peugot      plymouth 
+##             1            13            18            11             7 
+##       porsche       renault          saab        subaru        toyota 
+##             5             2             6            12            32 
+##    volkswagen         volvo 
+##            12            11
+\end{verbatim}
+
+Engine sizes for all vehicles in the data set
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{table}\NormalTok{(import\_data}\SpecialCharTok{$}\StringTok{\textasciigrave{}}\AttributeTok{engine{-}size}\StringTok{\textasciigrave{}}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+##  61  70  79  80  90  91  92  97  98 103 108 109 110 111 119 120 121 122 130 131 
+##   1   3   1   1  12   5  15  14  14   1  13   8  12   1   1   7   6  15   3   2 
+## 132 134 136 140 141 145 146 151 152 156 161 164 171 173 181 183 194 203 209 234 
+##   2   2   5   2   7   1   6   1   6   5   1   3   3   1   6   4   3   1   3   2 
+## 258 304 308 326 
+##   2   1   1   1
+\end{verbatim}
+
+All prices for vehicles in the data set
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{table}\NormalTok{(import\_data}\SpecialCharTok{$}\NormalTok{price)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+##  5118  5151  5195  5348  5389  5399  5499  5572  6095  6189  6229  6295  6338 
+##     1     1     1     1     1     1     1     2     1     1     2     1     1 
+##  6377  6479  6488  6529  6575  6649  6669  6692  6695  6785  6795  6849  6855 
+##     1     1     1     1     1     1     1     2     1     1     1     1     1 
+##  6918  6938  6989  7053  7099  7126  7129  7198  7295  7299  7349  7395  7463 
+##     1     1     1     1     1     1     1     1     2     1     1     1     1 
+##  7499  7603  7609  7689  7738  7775  7788  7799  7895  7898  7957  7975  7995 
+##     1     1     2     1     1     2     1     1     1     2     2     1     1 
+##  7999  8013  8058  8189  8195  8238  8249  8358  8449  8495  8499  8558  8778 
+##     1     1     1     1     1     1     1     1     1     2     1     1     1 
+##  8845  8921  8948  8949  9095  9233  9258  9279  9295  9298  9495  9538  9549 
+##     2     2     1     1     1     1     1     2     1     1     1     1     1 
+##  9639  9895  9959  9960  9980  9988  9989  9995 10198 10245 10295 10345 10595 
+##     1     1     1     1     1     1     1     1     1     1     1     1     1 
+## 10698 10795 10898 10945 11048 11199 11245 11248 11259 11549 11595 11694 11845 
+##     1     1     1     1     1     1     1     1     1     1     1     1     1 
+## 11850 11900 12170 12290 12440 12629 12764 12940 12945 12964 13200 13295 13415 
+##     1     1     1     1     1     1     1     1     1     1     1     1     1 
+## 13499 13645 13845 13860 13950 14399 14489 14869 15040 15250 15510 15580 15645 
+##     2     1     1     1     1     1     1     1     1     1     1     1     1 
+## 15690 15750 15985 15998 16430 16500 16503 16515 16558 16630 16695 16845 16900 
+##     1     1     1     1     1     2     1     1     1     1     1     1     1 
+## 16925 17075 17199 17450 17669 17710 17950 18150 18280 18344 18399 18420 18620 
+##     1     1     1     1     1     1     1     2     1     1     1     1     1 
+## 18920 18950 19045 19699 20970 21105 21485 22018 22470 22625 23875 24565 25552 
+##     1     1     1     1     1     1     1     1     1     1     1     1     1 
+## 28176 28248 30760 31600 32250 32528 34028 34184 35056 35550 36000 36880 37028 
+##     1     1     1     1     1     1     1     1     1     1     1     1     1 
+## 40960 41315 45400 
+##     1     1     1
+\end{verbatim}
+
+All highway-mpg in data set
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{table}\NormalTok{(import\_data}\SpecialCharTok{$}\StringTok{\textasciigrave{}}\AttributeTok{highway{-}mpg}\StringTok{\textasciigrave{}}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## 16 17 18 19 20 22 23 24 25 26 27 28 29 30 31 32 33 34 36 37 38 39 41 42 43 46 
+##  2  1  2  2  2  8  7 17 19  3  4 13 10 16  8 16  9 14  2 13 17  2  3  3  4  2 
+## 47 50 53 54 
+##  2  1  1  1
+\end{verbatim}
+
+All city-mpg in the data set
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{table}\NormalTok{(import\_data}\SpecialCharTok{$}\StringTok{\textasciigrave{}}\AttributeTok{city{-}mpg}\StringTok{\textasciigrave{}}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 
+##  1  2  3  6 13  3 27  3  7  4 12 22  8 12 14  7  3  8 28  1  1  1  1  1  6  7 
+## 45 47 49 
+##  1  1  1
+\end{verbatim}
+
+From the above information gathered, I can see that there are several
+different manufacturer's with very few vehicles in the data set (5
+manufacturer's with less than 5 vehicles in the data set), which
+can/will skew results. There are also several manufacturers with missing
+data in the prices column.
+
+\hypertarget{bivariate-analysis}{%
+\subsubsection{Bivariate Analysis}\label{bivariate-analysis}}
+
+\hypertarget{mean-highway-mpg-by-make}{%
+\paragraph{Mean highway mpg by make:}\label{mean-highway-mpg-by-make}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{hw\_mpg\_plot }\OtherTok{\textless{}{-}}\NormalTok{ hw\_mpg }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{group\_by}\NormalTok{(make) }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x=}\NormalTok{make, }\AttributeTok{y=}\NormalTok{mean\_hw\_mpg, }\AttributeTok{fill=}\NormalTok{make)) }\SpecialCharTok{+} \FunctionTok{geom\_bar}\NormalTok{(}\AttributeTok{stat=}\StringTok{"identity"}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{coord\_flip}\NormalTok{()}
+\NormalTok{hw\_mpg\_plot }\SpecialCharTok{+} \FunctionTok{ggtitle}\NormalTok{(}\StringTok{"Average Highway Mpg by Manufacturer"}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{xlab}\NormalTok{(}\StringTok{"Manufacturer"}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{ylab}\NormalTok{(}\StringTok{"Average Highway Mpg"}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{labs}\NormalTok{(}\AttributeTok{fill =} \StringTok{"Manufacturer"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Assignment2_Polished_files/figure-latex/unnamed-chunk-14-1.pdf}
+
+\hypertarget{mean-city-mpg-by-make}{%
+\paragraph{Mean city mpg by make:}\label{mean-city-mpg-by-make}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{city\_mpg\_plot }\OtherTok{\textless{}{-}}\NormalTok{ city\_mpg }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{group\_by}\NormalTok{(make) }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x=}\NormalTok{make, }\AttributeTok{y=}\NormalTok{mean\_city\_mpg, }\AttributeTok{fill=}\NormalTok{make)) }\SpecialCharTok{+} \FunctionTok{geom\_bar}\NormalTok{(}\AttributeTok{stat=}\StringTok{"identity"}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{coord\_flip}\NormalTok{()}
+\NormalTok{city\_mpg\_plot }\SpecialCharTok{+} \FunctionTok{ggtitle}\NormalTok{(}\StringTok{"Average City Mpg by Manufacturer"}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{xlab}\NormalTok{(}\StringTok{"Manufacturer"}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{ylab}\NormalTok{(}\StringTok{"Average City Mpg"}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{labs}\NormalTok{(}\AttributeTok{fill =} \StringTok{"Manufacturer"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Assignment2_Polished_files/figure-latex/unnamed-chunk-15-1.pdf}
+
+As we can see from the two graphs (above), Chevrolet quite clearly has
+the best mpg in both the highway (46.3) and city (41.0) categories. They
+are followed by Isuzu (36.0, 31.0) and Honda (35.5, 30.4) respectively.
+We can also see that Jaguar (18.3, 14.3) is quite far behind in both
+categories.
+
+\hypertarget{graphs-for-highway-and-city-mpg-vs-engine-size-by-make}{%
+\paragraph{Graphs for highway and city mpg vs engine size by
+make:}\label{graphs-for-highway-and-city-mpg-vs-engine-size-by-make}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{plot1}\OtherTok{\textless{}{-}} \FunctionTok{ggplot}\NormalTok{(}\AttributeTok{data=}\NormalTok{import\_data, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x=}\StringTok{\textasciigrave{}}\AttributeTok{highway{-}mpg}\StringTok{\textasciigrave{}}\NormalTok{, }\AttributeTok{y=}\StringTok{\textasciigrave{}}\AttributeTok{engine{-}size}\StringTok{\textasciigrave{}}\NormalTok{, }\AttributeTok{group=}\StringTok{\textasciigrave{}}\AttributeTok{make}\StringTok{\textasciigrave{}}\NormalTok{, }\AttributeTok{color=}\StringTok{\textasciigrave{}}\AttributeTok{make}\StringTok{\textasciigrave{}}\NormalTok{)) }\SpecialCharTok{+}  \FunctionTok{geom\_point}\NormalTok{()}
+\NormalTok{plot1 }\SpecialCharTok{+} \FunctionTok{ggtitle}\NormalTok{(}\StringTok{"Highway Mpg vs. Engine Size"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Assignment2_Polished_files/figure-latex/unnamed-chunk-16-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{plot2 }\OtherTok{\textless{}{-}} \FunctionTok{ggplot}\NormalTok{(}\AttributeTok{data=}\NormalTok{import\_data, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x=}\StringTok{\textasciigrave{}}\AttributeTok{city{-}mpg}\StringTok{\textasciigrave{}}\NormalTok{, }\AttributeTok{y=}\StringTok{\textasciigrave{}}\AttributeTok{engine{-}size}\StringTok{\textasciigrave{}}\NormalTok{, }\AttributeTok{group=}\StringTok{\textasciigrave{}}\AttributeTok{make}\StringTok{\textasciigrave{}}\NormalTok{, }\AttributeTok{color=}\StringTok{\textasciigrave{}}\AttributeTok{make}\StringTok{\textasciigrave{}}\NormalTok{)) }\SpecialCharTok{+} \FunctionTok{geom\_point}\NormalTok{()}
+\NormalTok{plot2 }\SpecialCharTok{+} \FunctionTok{ggtitle}\NormalTok{(}\StringTok{"City Mpg vs. Engine Size"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Assignment2_Polished_files/figure-latex/unnamed-chunk-16-2.pdf}
+
+From these graphs, I can tell that there is a correlation between engine
+size and fuel efficiency. These findings corroborate my earlier findings
+with regards to average mpg (for both city and highway driving). As can
+be seen, the luxury manufacturers (Jaguar, Mercedes-Benz, BMW) all have
+large engine vehicles, with very low mpg, while manufacturers like
+Chevrolet, Honda, and Mitsubishi have relatively small engine vehicles,
+but with a much higher fuel efficiency.
+
+\hypertarget{mean-price-by-make}{%
+\paragraph{Mean price by make:}\label{mean-price-by-make}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{price\_plot }\OtherTok{\textless{}{-}}\NormalTok{ price\_ }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{group\_by}\NormalTok{(make) }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x=}\NormalTok{make, }\AttributeTok{y=}\NormalTok{price, }\AttributeTok{fill=}\NormalTok{price)) }\SpecialCharTok{+} \FunctionTok{geom\_bar}\NormalTok{(}\AttributeTok{stat=}\StringTok{"identity"}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{coord\_flip}\NormalTok{()}
+\NormalTok{price\_plot }\SpecialCharTok{+} \FunctionTok{ggtitle}\NormalTok{(}\StringTok{"Average Price by Manufacturer"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: Removed 3 rows containing missing values (position_stack).
+\end{verbatim}
+
+\includegraphics{Assignment2_Polished_files/figure-latex/unnamed-chunk-17-1.pdf}
+
+As we can see above, Jaguar, Mercedes-Benz, and BMW are quite far ahead
+of the competition when it comes to price. This is not that surprising,
+as both manufacturers are luxury vehicle manufacturers, and their
+vehicles have to be imported, further increasing their value. We can
+also see that Chevrolet is the cheapest of the data set, as well as the
+most fuel efficient. We can also see that three of the manufacturers in
+the data set had missing prices, and had to be removed (Porsche, Isuzu,
+and Audi)
+
+\hypertarget{highway-vs-city-mpg-by-make-and-price}{%
+\paragraph{Highway vs city mpg by make and
+price:}\label{highway-vs-city-mpg-by-make-and-price}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{comp\_mpg }\OtherTok{\textless{}{-}}\NormalTok{ import\_data }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x=}\StringTok{\textasciigrave{}}\AttributeTok{highway{-}mpg}\StringTok{\textasciigrave{}}\NormalTok{, }\AttributeTok{y=}\StringTok{\textasciigrave{}}\AttributeTok{city{-}mpg}\StringTok{\textasciigrave{}}\NormalTok{)) }\SpecialCharTok{+} \FunctionTok{geom\_point}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{col=}\NormalTok{make, }\AttributeTok{size=}\NormalTok{price), }\AttributeTok{na.rm=}\ConstantTok{TRUE}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{geom\_smooth}\NormalTok{()}
+\NormalTok{comp\_mpg }\SpecialCharTok{+} \FunctionTok{ggtitle}\NormalTok{(}\StringTok{"City Mpg vs. Highway Mpg }\SpecialCharTok{\textbackslash{}n}\StringTok{ by Manufacturer and Price"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## `geom_smooth()` using method = 'loess' and formula 'y ~ x'
+\end{verbatim}
+
+\includegraphics{Assignment2_Polished_files/figure-latex/unnamed-chunk-18-1.pdf}
+
+As we can see from this graph, Jaguar and Mercedes-Benz are at the
+bottom of not only the city and highway mpg averages, but also the most
+expensive vehicles. Along with previous calculations and observations,
+this is not a very surprising result, as both manufacturers are
+concerned with luxury vehicles, as well as being imported into our
+market, which drives their price up.
+
+\hypertarget{outliers-found-in-engine-size-highway-and-city-mpg-and-price-by-make}{%
+\paragraph{Outliers found in engine size, highway and city mpg, and
+price by
+make:}\label{outliers-found-in-engine-size-highway-and-city-mpg-and-price-by-make}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{engine\_size\_outliers\_plot }\OtherTok{\textless{}{-}} \FunctionTok{ggplot}\NormalTok{(}\AttributeTok{data=}\NormalTok{import\_data, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x=}\StringTok{\textasciigrave{}}\AttributeTok{engine{-}size}\StringTok{\textasciigrave{}}\NormalTok{, }\AttributeTok{y=}\StringTok{\textasciigrave{}}\AttributeTok{make}\StringTok{\textasciigrave{}}\NormalTok{, }\AttributeTok{color=}\StringTok{\textasciigrave{}}\AttributeTok{make}\StringTok{\textasciigrave{}}\NormalTok{)) }\SpecialCharTok{+} \FunctionTok{geom\_boxplot}\NormalTok{(}\AttributeTok{outlier.color=}\StringTok{"red"}\NormalTok{, }\AttributeTok{outlier.shape=}\DecValTok{8}\NormalTok{, }\AttributeTok{outlier.size=}\DecValTok{5}\NormalTok{)}
+\NormalTok{engine\_size\_outliers\_plot }\SpecialCharTok{+} \FunctionTok{stat\_summary}\NormalTok{(}\AttributeTok{fun=}\NormalTok{mean, }\AttributeTok{geom=}\StringTok{"point"}\NormalTok{, }\AttributeTok{shape=}\DecValTok{20}\NormalTok{, }\AttributeTok{size=}\DecValTok{4}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Assignment2_Polished_files/figure-latex/unnamed-chunk-19-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{outliers\_highway\_mpg }\OtherTok{\textless{}{-}} \FunctionTok{ggplot}\NormalTok{(}\AttributeTok{data=}\NormalTok{import\_data, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x=}\StringTok{\textasciigrave{}}\AttributeTok{highway{-}mpg}\StringTok{\textasciigrave{}}\NormalTok{, }\AttributeTok{y=}\StringTok{\textasciigrave{}}\AttributeTok{make}\StringTok{\textasciigrave{}}\NormalTok{, }\AttributeTok{color=}\StringTok{\textasciigrave{}}\AttributeTok{make}\StringTok{\textasciigrave{}}\NormalTok{)) }\SpecialCharTok{+} \FunctionTok{geom\_boxplot}\NormalTok{(}\AttributeTok{outlier.color=}\StringTok{"red"}\NormalTok{, }\AttributeTok{outlier.shape=}\DecValTok{8}\NormalTok{, }\AttributeTok{outlier.size=}\DecValTok{5}\NormalTok{)}
+\NormalTok{outliers\_highway\_mpg }\SpecialCharTok{+} \FunctionTok{stat\_summary}\NormalTok{(}\AttributeTok{fun=}\NormalTok{mean, }\AttributeTok{geom=}\StringTok{"point"}\NormalTok{, }\AttributeTok{shape=}\DecValTok{20}\NormalTok{, }\AttributeTok{size=}\DecValTok{4}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Assignment2_Polished_files/figure-latex/unnamed-chunk-19-2.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{outliers\_city\_mpg }\OtherTok{\textless{}{-}} \FunctionTok{ggplot}\NormalTok{(}\AttributeTok{data=}\NormalTok{import\_data, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x=}\StringTok{\textasciigrave{}}\AttributeTok{city{-}mpg}\StringTok{\textasciigrave{}}\NormalTok{, }\AttributeTok{y=}\StringTok{\textasciigrave{}}\AttributeTok{make}\StringTok{\textasciigrave{}}\NormalTok{, }\AttributeTok{color=}\StringTok{\textasciigrave{}}\AttributeTok{make}\StringTok{\textasciigrave{}}\NormalTok{)) }\SpecialCharTok{+} \FunctionTok{geom\_boxplot}\NormalTok{(}\AttributeTok{outlier.color=}\StringTok{"red"}\NormalTok{, }\AttributeTok{outlier.shape=}\DecValTok{8}\NormalTok{, }\AttributeTok{outlier.size=}\DecValTok{5}\NormalTok{)}
+\NormalTok{outliers\_city\_mpg }\SpecialCharTok{+} \FunctionTok{stat\_summary}\NormalTok{(}\AttributeTok{fun=}\NormalTok{mean, }\AttributeTok{geom=}\StringTok{"point"}\NormalTok{, }\AttributeTok{shape=}\DecValTok{20}\NormalTok{, }\AttributeTok{size=}\DecValTok{4}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Assignment2_Polished_files/figure-latex/unnamed-chunk-19-3.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{outliers\_price }\OtherTok{\textless{}{-}} \FunctionTok{ggplot}\NormalTok{(}\AttributeTok{data=}\NormalTok{import\_data, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x=}\StringTok{\textasciigrave{}}\AttributeTok{price}\StringTok{\textasciigrave{}}\NormalTok{, }\AttributeTok{y=}\StringTok{\textasciigrave{}}\AttributeTok{make}\StringTok{\textasciigrave{}}\NormalTok{, }\AttributeTok{color=}\StringTok{\textasciigrave{}}\AttributeTok{make}\StringTok{\textasciigrave{}}\NormalTok{)) }\SpecialCharTok{+} \FunctionTok{geom\_boxplot}\NormalTok{(}\AttributeTok{outlier.color=}\StringTok{"red"}\NormalTok{, }\AttributeTok{outlier.shape=}\DecValTok{8}\NormalTok{, }\AttributeTok{outlier.size=}\DecValTok{5}\NormalTok{)}
+\NormalTok{outliers\_price }\SpecialCharTok{+} \FunctionTok{stat\_summary}\NormalTok{(}\AttributeTok{fun=}\NormalTok{mean, }\AttributeTok{geom=}\StringTok{"point"}\NormalTok{, }\AttributeTok{shape=}\DecValTok{20}\NormalTok{, }\AttributeTok{size=}\DecValTok{4}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: Removed 4 rows containing non-finite values (stat_boxplot).
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: Removed 4 rows containing non-finite values (stat_summary).
+\end{verbatim}
+
+\includegraphics{Assignment2_Polished_files/figure-latex/unnamed-chunk-19-4.pdf}
+
+\hypertarget{conclusion}{%
+\subsection{Conclusion:}\label{conclusion}}
+
+To begin with, I was very surprised to see that Chevrolet came first in
+both the mpg categories, as well as having the lowest average price per
+vehicle. However, I feel that my data may be somewhat skewed because
+there are only \textbf{three} instances of Chevrolet's in the data set,
+while there are \textbf{thirty-two} vehicles for Toyota present in the
+set. Going into this analysis, I had assumed that either Honda,
+Mitsubishi, or Toyota would be the most fuel efficient based on my
+personal experience. Research conducted in 2022 also supports my claim
+as, for non-hybrid vehicles (as it does not seem fair to compare hybrid
+to non hybrid), the Mitsubishi Mirage, the Hyundai Elantra, and the
+Honda Civic seem to be the most fuel efficient vehicles (1,2,3). Of
+these three manufacturer's, only Honda appears in the top three for the
+data set. Another surprise for the most fuel efficient vehicles was
+Isuzu. Isuzu does not even sell cars in North America anymore, as it
+primarly produces trucks (though again, this data might be skewed since
+there are only four Isuzu's in the data set).
+
+Also, from the third graph, we can quite clearly see that Jaguar and
+Mercedes-Benz are leading the pack for highest average prices, though
+Audi, Isuzu, and Porsche all have missing data, and so had to be
+removed.
+
+After my preliminary analysis and observations, I decided to try and
+figure out how these manfacturers compared to the manufacturers of the
+present with regards to fuel efficiency, and was quite surprised by the
+results. With Chevrolet being the highest rated in both fuel efficiency
+and price, I was slightly dismayed to find that, although there have
+been many breakthroughs in fuel efficiency and manufacturing upgrades,
+the highway and city mpg of 1985 vehicles is relatively similar to those
+of the modern era. I decided to ignore hybrid/electric vehicles, as it
+is not a realistic comparison between the two drive types (petrol
+powered vs.~hybrid), as hybrid will always be more fuel efficient. I
+found that top rated vehicles of modern manufacturers have a very
+similar mpg to those from thirty-seven years ago.
+
+From my analysis, I can conclude that Chevrolet is the highest rated
+vehicle in terms of fuel efficiency, engine size, and price. Based on
+personal knowledge and of this data set, I can see that there has not
+been a large change in Chevrolet's vehicles over the years, as they
+still prioritize many small, fuel efficient, and inexpensive vehicles
+across their range of vehicles in 2022.
+
+\hypertarget{citations}{%
+\subsubsection{Citations:}\label{citations}}
+
+Data Set:
+\url{https://archive.ics.uci.edu/ml/machine-learning-databases/autos/}\\
+1)\url{https://www.cars.com/articles/what-are-the-most-fuel-efficient-cars-for-2022-447856/}
+~2)\url{https://www.autobytel.com/coupes/car-buying-guides/the-10-most-fuel-efficient-non-hybrids-126560/}
+~3)\url{https://www.carhp.com/news/top-10-most-fuel-efficient-non-hybrid-cars}
+~4)\url{http://www.sthda.com/english/wiki/ggplot2-box-plot-quick-start-guide-r-software-and-data-visualization}\\
+
+\end{document}

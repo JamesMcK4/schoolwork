@@ -1,0 +1,184 @@
+---
+title: "R Notebook"
+Author: James McKinlay, B00867096
+output:
+  html_document:
+    df_print: paged
+---
+
+```{r}
+library(tidyverse)
+library(MASS)
+library(mlbench)
+library(ggplot2)
+library(readr)
+```
+1)
+```{r}
+data(Sonar)
+head(Sonar)
+help(Sonar)
+```
+
+2)
+```{r}
+table(Sonar$Class)
+plot(Sonar$Class)
+
+```
+3)
+```{r}
+data <- Sonar
+set.seed(123)
+testing <- sort(sample(nrow(data), nrow(data)*.8))
+
+
+training <- data[testing,]
+testing_data <- data[-testing,]
+
+```
+
+```{r}
+print(testing_data$Class)
+print(training$Class)
+```
+
+4)
+```{r}
+lda_model <- lda(Class ~., data=testing_data)
+```
+
+5)
+```{r}
+prediction_model <- predict(lda_model, testing_data)
+#prediction_model
+```
+
+6)
+```{r}
+prediction_table <- table(prediction_model$class, testing_data$Class)
+print(prediction_table)
+```
+7)
+```{r}
+error_number <- 1-sum(diag(prediction_table))/sum(prediction_table)
+print(error_number)
+```
+8)
+```{r}
+lda_model_training <- lda(Class ~., training)
+prediction_model_training <- predict(lda_model_training, training)
+prediction_table_training <- table(prediction_model_training$class, training$Class)
+print(prediction_table_training)
+error_number_training <- 1-sum(diag(prediction_table_training))/sum(prediction_table_training)
+print(error_number_training)
+```
+
+9)
+```{r}
+metrics <- function(preds, trues, posClass){
+  confusion_matrix <- table(trues, preds)
+  posInd <- which(rownames(confusion_matrix) == posClass)
+  acc <- sum(diag(confusion_matrix)) / sum(confusion_matrix)
+  
+  tp <- length(which(trues == posClass && preds == posClass))
+  fp <- length(which(trues != posClass && preds == posClass))
+  tn <- length(which(trues != posClass && preds != posClass))
+  fn <- length(which(trues == posClass && preds != posClass))
+  
+  precision <- tp/(tp+fp)
+  rec <- tp/(tp+fn)
+  f1 <- 2*(precision*rec)/(precision+rec)
+  
+  c(accuracy = acc, precision = precision, rec = rec, f1 = f1)
+}
+```
+
+```{r}
+m <- MASS::lda(Class ~., training)
+preds <- predict(m, testing_data)
+print(preds)
+```
+
+10)
+
+```{r}
+#metrics(testing_data$Class, )
+```
+
+11)
+
+12)
+
+13)
+```{r}
+library(e1071)
+svm_testing <- svm(Class ~., testing_data, kernel="linear")
+svm_testing
+
+radial_svm <- svm(Class ~., data=testing_data, kernel="radial")
+radial_svm
+```
+14)
+```{r}
+summary(svm_testing)
+summary(radial_svm)
+```
+15)
+```{r}
+prediction_svm_testing <- predict(svm_testing, testing_data)
+prediction_radial_svm <- predict(radial_svm, testing_data)
+
+print(prediction_svm_testing)
+print(prediction_radial_svm)
+```
+16)
+```{r}
+#tune.svm(x=training, y=testing_data, type="C-classification", kernel="radial", gamma=10^(1:2))
+```
+
+
+
+
+19.
+```{r}
+import_data <- read.csv("C:/Users/jmcki/OneDrive/Desktop/School/3141/B00867096-CSCI3141-L7/abalone.data")
+import_names <- read.csv("C:/Users/jmcki/OneDrive/Desktop/School/3141/B00867096-CSCI3141-L7/abalone.names")
+
+text <- read_lines("C:/Users/jmcki/OneDrive/Desktop/School/3141/B00867096-CSCI3141-L7/abalone.names")
+text
+```
+
+20.
+```{r}
+head(import_data)
+ggplot(data=import_data, aes(x=X15)) + geom_histogram()
+```
+21.
+```{r}
+set.seed(345)
+testing_ab <- sort(sample(nrow(import_data), nrow(import_data)*.7))
+
+
+training_data <- import_data[testing,]
+testing_data <- import_data[-testing,]
+```
+
+22.
+```{r}
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+Notes:
+Check lecture 13 for SVM

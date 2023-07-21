@@ -1,0 +1,83 @@
+---
+title: "Lab 6 Notebook - B00867096"
+output: html_notebook
+---
+
+```{r}
+library(tidyverse)
+```
+
+1.
+```{r}
+data(diamonds, package = "ggplot2")
+```
+
+a.
+```{r}
+avgPrice <- diamonds %>% group_by(cut, color) %>% summarize(count = mean(price))
+avgPrice
+avgPrice_mutated <- diamonds %>% group_by(cut, color) %>% mutate(avgPrice = mean(price))
+avgPrice_mutated
+```
+
+b.
+```{r}
+filtered_diamonds <- diamonds %>% filter(cut %in% c("Ideal", "Premium"), color %in% c("D", "G", "J"))
+filtered_diamonds
+```
+
+c.
+```{r}
+histogram1 <- ggplot(data=filtered_diamonds, aes(x=price)) + geom_histogram() + facet_grid(cut ~ color)
+histogram1
+
+histogram2 <- ggplot(data=filtered_diamonds, aes(x=price)) + geom_histogram() + facet_grid(color~cut)
+histogram2
+```
+
+d.
+
+```{r}
+scatterplot1 <- ggplot(data=filtered_diamonds, aes(x=depth, y=carat, color=price))+ geom_point()
+scatterplot1
+
+scatterplot2 <- ggplot(data=filtered_diamonds, aes(x=depth, y=carat)) + geom_point(aes(color=price))
+scatterplot2
+```
+
+2.
+```{r}
+ts <- c(-100, rep(1, 43), 100)
+ps <- c(-100, -100, seq(-1, 3, 0.1), 100, 100)
+```
+
+3.
+```{r}
+res <- data.frame(ts, ps)
+colnames(res) <- c("trues", "preds")
+res
+```
+
+```{r}
+df <- res %>% mutate(AE=abs(preds-trues), SE=((preds-trues)^2), APE=abs((preds-trues)/trues), SAPE=abs(preds-trues)/(abs(preds)+abs(trues)))
+df
+```
+
+5.
+a/b.
+```{r}
+summarized_cols <- df %>% summarize_at(vars(AE:SAPE), function(x) mean(x))
+summarized_cols <- round(summarized_cols)
+summarized_cols
+```
+
+c.
+```{r}
+summarized_cols <- summarized_cols %>% mutate(MSE=sqrt(SE))
+summarized_cols
+```
+6.
+```{r}
+
+```
+

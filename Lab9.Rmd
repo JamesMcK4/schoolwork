@@ -1,0 +1,191 @@
+---
+title: "Lab9"
+author: "James McKinlay"
+date: "2022-11-29"
+output: html_document
+---
+
+```{r}
+library(mlbench)
+data("Ionosphere")
+library(cluster)
+library(tidyverse)
+library(ggplot2)
+```
+
+```{r}
+head(Ionosphere)
+```
+
+1)
+
+```{r}
+eucl <- dist(Ionosphere[,c(-1,-2,-35)], method="euclidean")
+manh <- dist(Ionosphere[,c(-1,-2,-35)], method="manhattan")
+mink <- dist(Ionosphere[,c(-1,-2,-35)], method="minkowski")
+gower <- daisy(Ionosphere[,-35], metric="gower")
+```
+
+```{r}
+summary(eucl)
+```
+```{r}
+summary(manh)
+```
+
+```{r}
+summary(mink)
+```
+
+```{r}
+summary(gower)
+```
+
+2)
+```{r}
+eucl2 <- dist(Ionosphere[,-1:-2], method="euclidean")
+manh2 <- dist(Ionosphere[,-1:-2], method="manhattan")
+mink2 <- dist(Ionosphere[,-1:-2], method="minkowski")
+gower2 <- daisy(Ionosphere, metric="gower")
+```
+
+```{r}
+summary(eucl2)
+```
+ Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.000   2.864   4.212   4.050   5.247   9.889 
+
+
+
+```{r}
+summary(manh2)
+```
+  Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+   0.00   13.23   19.75   19.18   25.01   50.44 
+   
+
+```{r}
+summary(mink2)
+```
+ Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.000   2.864   4.212   4.050   5.247   9.889 
+
+
+```{r}
+summary(gower2)
+```
+
+61425 dissimilarities, summarized :
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.0000  0.1896  0.2842  0.2769  0.3612  0.7353 
+Metric :  mixed ;  Types = N, N, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I 
+Number of objects : 351
+
+
+All metrics are very similar with regards to 1st quartile, median, mean, 3rd quartile, and max (all mins are the same at 0)
+
+
+3)
+
+```{r}
+eucl <- as.matrix(eucl)
+eucl2 <- as.matrix(eucl2)
+
+manh <- as.matrix(manh)
+manh2 <- as.matrix(manh2)
+
+mink <- as.matrix(mink)
+mink2 <- as.matrix(mink2)
+
+gower <- as.matrix(gower)
+gower2 <- as.matrix(gower2)
+```
+
+```{r}
+eucl_first_row <- eucl[1,]
+eucl_first_row <- sort(eucl_first_row)
+
+head(eucl_first_row)
+tail(eucl_first_row)
+```
+
+For the euclidean matrix, the most similar cases in the first row are cases: 33, 182, 3, 9, and 145.  The most dissimilar cases are cases: 22, 163, 207, 54, 189, and 18.
+
+```{r}
+manh_first_row <- manh[1,]
+manh_first_row <- sort(manh_first_row)
+
+head(manh_first_row)
+tail(manh_first_row)
+```
+For the manhattan matrix, the most similar cases are cases: 182, 33, 3, 145, and 202.  The most dissimilar cases are cases: 163, 221, 22, 189, 54, 18
+```{r}
+mink_first_row <- mink[1,]
+mink_first_row <- sort(mink_first_row)
+
+head(mink_first_row)
+tail(mink_first_row)
+```
+For the Minkowski matrix, the most similar cases are cases: 33, 182, 3, 9, and 145, while the most dissimilar are cases: 22, 163, 207, 54, 189, and 18
+```{r}
+gower_first_row <- gower[1,]
+gower_first_row <- sort(gower_first_row)
+
+head(gower_first_row)
+tail(gower_first_row)
+```
+For the Gower matrix, the most similar cases are cases: 182, 33, 3, 145, and 202, while the most dissimilar cases are cases: 20, 221, 54, 22, 189, and 18.
+
+
+4)
+
+```{r}
+eucl <- dist(Ionosphere[,c(-1,-2,-35)], method="euclidean")
+iono_without_class <- Ionosphere[, c(-1,-2,-35)]
+
+set.seed(123)
+kmeans_iono1 <- kmeans(iono_without_class, centers=15)
+kmeans_iono2 <- kmeans(iono_without_class, centers=2)
+kmeans_iono3 <- kmeans(iono_without_class, centers=3)
+kmeans_iono10 <- kmeans(iono_without_class, centers=10)
+kmeans_iono20 <- kmeans(iono_without_class, centers=20)
+
+
+sil <- silhouette(kmeans_iono1$cluster, dist=eucl)
+sil2 <- silhouette(kmeans_iono2$cluster, dist=eucl)
+sil3 <- silhouette(kmeans_iono3$cluster, dist=eucl)
+sil4 <- silhouette(kmeans_iono10$cluster, dist=eucl)
+sil5 <- silhouette(kmeans_iono20$cluster, dist=eucl)
+
+plot(sil, border=NA)
+plot(sil2, border=NA)
+plot(sil3, border=NA)
+plot(sil4, border=NA)
+plot(sil5, border=NA)
+
+mean1<-mean(sil[,3])
+
+mean2<-mean(sil2[,3])
+
+mean3<-mean(sil3[,3])
+
+mean4<-mean(sil4[,3])
+
+mean5<-mean(sil5[,3])
+```
+
+5)
+```{r}
+avg <- c()
+for(k in 2:6){
+  clust <- kmeans(iono_without_class, centers=k, iter.max=100)
+  silo <- silhouette(clust$cluster, eucl)
+  avg <- c(avg, mean(silo[,3]))
+}
+```
+
+```{r}
+ggplot(data.frame(nClus=2:6,Silh=avg), aes(x=nClus,y=Silh)) + geom_point(size=3,color="red") + geom_line() +
+xlab("Num                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       .Clusters") + ylab("Silo.Coef.")
+```
+

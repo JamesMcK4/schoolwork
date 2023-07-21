@@ -1,0 +1,194 @@
+---
+title: "Assignment 3 - Performance Estimation"
+author: "James McKinlay - B00867096"
+output: html_document
+---
+
+Question: Determining best model for predicting price based on other numerical attributes in data set.\
+
+# Introduction:
+
+For this assignment, I will be using the import_85 automobile data set. This data set is from the Machine Learning Repository, at the Center for Machine Learning and Intelligent Systems (https://archive.ics.uci.edu/ml/datasets/Automobile).  This data set contains 26 different attributes for automobiles, ranging from safety ratings, insurance risks, vehicle specifications, and average loss information. It contains this information on a number of different manufacturers, some located in North America, some from Europe, and some from Asia.\
+There is a small amount of missing data, which will be handled in the data preperation phase of the assignment.
+
+I will be attempting to determine which model will best predict vehicle price based on all other numerical attributes. In order to accomplish this, I will be testing three different models: linear regression, random forest, and support vector machines.
+
+I will be using regression metrics to determine the mean squared error (mse) and the root mean squared error (rmse) and comparing it to the predicted mse/rmse. These will be used as my evaluation metrics
+
+I will be using holdout (with 200 iterations) for performance estimation of my models, in order to determine the most viable model for my purposes.
+
+## Data And Libraries:
+
+```{r, warning=FALSE}
+library(tidyverse)
+library(e1071)
+library(MASS)
+library(DMwR2)
+library(performanceEstimation)
+library(randomForest)
+library(rpart)
+library(rpart.plot)
+```
+
+```{r, include=FALSE}
+import_data <- read.csv("C:/Users/jmcki/OneDrive/Desktop/School/3141/CSCI3141_Assignment3_James_McKinlay_B00867096/imports-85.data")
+import_names <- read.csv("C:/Users/jmcki/OneDrive/Desktop/School/3141/CSCI3141_Assignment3_James_McKinlay_B00867096/imports-85.names")
+```
+
+In this code chunk, I will be parsing the .names file of the given data set and assigning all column names properly.
+
+```{r}
+text <- read_lines("C:/Users/jmcki/OneDrive/Desktop/School/3141/CSCI3141_Assignment3_James_McKinlay_B00867096/imports-85.names")
+#text[61:89]
+names <- str_split_fixed(text[61:89], "\\. ",n=2)[,2]
+names <- str_split_fixed(names, ":", n=2)[,1]
+names <- names[-4:-6]
+names <- make.names(names)
+colnames(import_data)[1:26] <- names
+#which(import_data=="?")
+import_data <- replace(import_data, import_data=="?", NA)
+import_data[, c(26)] <- sapply(import_data[, c(26)], as.numeric)
+head(import_data)
+```
+
+As you can see from the above data frame, there is some missing data included in the data set (focused mostly on the normalized.losses). These missing bits of data will be filled in using the mean of the training data in a later step.
+
+In this section, I am splitting the data set in to training and testing groups, with an 80%/20% training/testing split in order to perform external holdout for performance estimation.
+
+```{r}
+#str(import_data)
+set.seed(123)
+
+test_data <- sort(sample(nrow(import_data), nrow(import_data)*.8))
+
+tr <- as.data.frame(import_data[test_data, ])
+ts <- as.data.frame(import_data[-test_data, ])
+```
+
+## Data Preparation:
+
+Changing all columns to numeric so that I can use them easier for later experiment.
+
+```{r}
+tr <- tr[sapply(tr, is.numeric)] 
+ts <- ts[sapply(ts, is.numeric)]
+```
+
+Filling in missing data using the mean of the training data.
+
+```{r}
+for(i in 1:ncol(tr)){
+  tr[is.na(tr[,i]), i] <- mean(tr[,i], na.rm = TRUE)
+}
+for(i in 1:ncol(ts)){
+  ts[is.na(ts[,i]), i] <- mean(tr[,i], na.rm = TRUE)
+}
+which(is.na(tr))
+which(is.na(ts))
+head(tr)
+```
+
+## Baseline Metric
+
+```{r}
+base <- rep(mean(ts$price), nrow(ts))
+regressionMetrics(ts$price, base)
+```
+
+## Performance Estimation & Workflow
+
+In this section, I am designing an R workflow in order to run my performance estimation on three different models: random forest, linear regression, and support vector machine.
+
+I had originally tried to use knn imputation as a data preparation algorithm in order to fill in missing data, however, my data set is too small to use knn reliably, so I have decided instead to use central imputation. I am using the bootstrap method as a performance estimator.
+
+I tried several variations of hyper-parameters for both the random forest model (number of trees: 50, 100, 150, 200 and feature trying from 1:10, 2:10, 3:10, 1:5), and the support vector machine (cost: 0, 0.5, 1).
+
+
+```{r, results='hide'}
+results1 <- performanceEstimation(PredTask(price ~., tr),
+                                 c(workflowVariants("standardWF", pre="centralImp", learner="randomForest",
+                                   learner.pars = list(
+                                         ntree = 50,
+                                         mtry = c(3:10)), as.is = "pre"), 
+                                  Workflow("standardWF", pre="centralImp", learner="lm"),
+                                  Workflow("standardWF", pre="centralImp", learner="svm",
+                                                     learner.pars = list(
+                                                       cost = 1,
+                                                       kernel = "radial"
+                                                     ))),
+                                 EstimationTask(metrics="mse", method=Bootstrap(nReps=200)))
+
+```
+
+#### Summary of results:
+
+```{r}
+summary(results1)
+```
+
+#### Top performing model:
+
+```{r}
+topPerformers(results1)
+```
+
+As you can see from the above result, the random forest model is performing much better than the other two options (with linear regression coming in a close second and support vector machines quite far behind the other two).
+
+We can see that the mse/rmse for the random forest model is a lower value than that of the linear regression model and the support vector machine, which corroborates my findings that the random forest model is the best model. You can see that the average mse is much lower than those values corresponding to the linear regression model, as well as the svm. The minimum and maximum values for the random forest model are also much lower than those of the linear regression model and the support vector machine.
+
+#### Models plotted:
+
+```{r}
+plot(results1)
+```
+
+```{r, include=FALSE}
+random_forest_attempt <- randomForest(price~., tr, importance = TRUE)
+```
+
+```{r, include=FALSE}
+full_model <- lm(price~., tr)
+```
+
+
+#### Baseline metric
+
+```{r}
+regressionMetrics(ts$price, base)
+```
+
+#### First prediction 
+Based on all numerical variables for both random forest model and linear regression model.
+
+```{r}
+pred<- predict(random_forest_attempt, ts)
+
+pred2 <- predict(full_model, ts)
+
+regressionMetrics(ts$price, pred)
+regressionMetrics(ts$price, pred2)
+```
+
+```{r, warning=FALSE}
+pres <- pairedComparisons(results1, baseline="randomForest.v3" )
+pres$mse$WilcoxonSignedRank.test
+
+signifDiffs(pres, p.limit=0.05)
+```
+
+As you can see from the above paired comparison table, using the random forest (version 3) as a baseline, the random forest models performed significantly better than either the linear model or the svm . These values suggest a significant result.
+
+As shown above, the random forest versions 4-8, as well as the svm and linear model all show significant results based on a 95% confidence interval.
+
+With these p-values, I can say, with confidence, that there is no significant difference between the models.
+
+
+```{r}
+varImpPlot(random_forest_attempt)
+```
+
+## Conclusion:
+
+To conclude, if the aim is to predict the value of a vehicle (in this data set), my suggestion would be to use a random forest model, using a hyper parameter of 50 trees and 3 to 10 features randomly sampled each node. From my results, I cannot be confident that my model is more statistically significant than the other options available.
+
+As we can see from the graphs above, engine size and curb weight seem to be the most important factors, which I found very odd. Engine size would normally be considered an important factor in price, but curb weight surprised me. However, based on my personal experience, I could extrapolate curb weight, in this instance, to a parameter of driving factors (top speed and shortest brake distance), which could then raise its level of importance, as top speed and max brake distance are both used as metrics for valuation of vehicles today.

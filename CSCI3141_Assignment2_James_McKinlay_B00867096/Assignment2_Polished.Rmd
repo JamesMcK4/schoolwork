@@ -1,0 +1,245 @@
+---
+title: "Assignment 2 Notebook"
+author: "James McKinlay, B00867096"
+output: html_document
+---
+
+## Introduction:
+
+I have decided to choose the automobile directory from the list of choices given. This data set contains details and data about the automobiles from 1985. This data set contains 26 different attributes for automobiles, ranging from safety ratings, insurance risks, vehicle specifications, and average loss information. It contains this information on a number of different manufacturers, some located in North America, some from Europe, and some from Asia.\
+**I will be trying to determine:**\
+1)Which manufacturer has the best vehicles in the categories of engine size, price, highway-mpg and city-mpg.\
+2)The correlation between highway and city mpg, price of vehicle, and engine size.\
+3)The difference in price/mpg between the luxury manufacturers and the family manufacturers.
+
+```{r}
+library(tidyverse)
+```
+
+Reading in the data set
+
+```{r}
+import_data <- read.csv("C:/Users/jmcki/OneDrive/Desktop/School/3141/CSCI3141_Assignment2_James_McKinlay_B00867096/imports-85.data")
+import_names <- read.csv("C:/Users/jmcki/OneDrive/Desktop/School/3141/CSCI3141_Assignment2_James_McKinlay_B00867096/imports-85.names")
+
+```
+
+## Data Cleaning:
+
+In this section of code, I am retrieving the column names from the .names file and attaching them to the data frame. To do this I initially created a vector with the text from the .names file, then split the period and space from the name, as well as the colon. I then trimmed out the empty lines (lines 4 to 6 respectively) which were in place because of another column, and added the names to the data frame import_data.\
+I also cleaned up the columns, as there were several sections of missing data (shown as a "?" in the data set), and replaced the missing data with an NA.
+
+```{r}
+#import_data
+text <- read_lines("C:/Users/jmcki/OneDrive/Desktop/School/3141/CSCI3141_Assignment2_James_McKinlay_B00867096/imports-85.names")
+#text[61:89]
+names <- str_split_fixed(text[61:89], "\\. ",n=2)[,2]
+names <- str_split_fixed(names, ":", n=2)[,1]
+names <- names[-4:-6]
+colnames(import_data)[1:26] <- names
+#which(import_data=="?")
+import_data <- replace(import_data, import_data=="?", NA)
+import_data[, c(26)] <- sapply(import_data[, c(26)], as.numeric)
+```
+
+### Univariate Analysis
+
+#### Summary of data:
+
+```{r}
+summary(import_data)
+```
+
+#### Mean data:
+
+```{r}
+mean_hw_mpg <- mean(import_data$`highway-mpg`)
+mean_city_mpg <- mean(import_data$`city-mpg`)
+mean_price <- mean(import_data$`price`, na.rm=TRUE)
+mean_engine_size <- mean(import_data$`engine-size`, na.rm=TRUE)
+print(mean_city_mpg)
+print(mean_hw_mpg)
+print(mean_price)
+print(mean_engine_size)
+```
+
+From the data above, I can conclude that there is an average city mpg of 25.24mpg, an average highway mpg of 30.77mpg, an average price of \$13205.69, and an average engine size of 126.89 across all vehicles in the data set. \n
+
+#### Median data:
+
+```{r}
+median_city_mpg <- median(import_data$`city-mpg`)
+median_hw_mpg <- median(import_data$`highway-mpg`)
+median_price <- median(import_data$price, na.rm=TRUE)
+median_engine_size <- median(import_data$`engine-size`, na.rm=TRUE)
+print(median_hw_mpg)
+print(median_city_mpg)
+print(median_price)
+print(median_engine_size)
+```
+
+From the data above, I can conclude that there is a median city mpg of 24, a median highway mpg of 30, a median price of \$10270, and a median engine size of 119.5.\n
+
+#### Max, min, and range:
+
+```{r}
+max_hw_mpg <- max(import_data$`highway-mpg`)
+min_hw_mpg <- min(import_data$`highway-mpg`)
+max_city_mpg <- max(import_data$`city-mpg`)
+min_city_mpg <- min(import_data$`city-mpg`)
+max_price <- max(import_data$price, na.rm=TRUE)
+min_price <- min(import_data$price, na.rm=TRUE)
+max_engine_size <- max(import_data$`engine-size`, na.rm=TRUE)
+min_engine_size <- min(import_data$`engine-size`, na.rm=TRUE)
+range_hw_mpg <- max_hw_mpg - min_hw_mpg
+range_city_mpg <- max_city_mpg - min_city_mpg
+range_price <- max_price - min_price
+range_engine_size <- max_engine_size - min_engine_size
+
+print(max_hw_mpg)
+print(min_hw_mpg)
+print(range_hw_mpg)
+print(max_city_mpg)
+print(min_city_mpg)
+print(range_city_mpg)
+
+print(max_price)
+print(min_price)
+print(range_price)
+
+print(max_engine_size)
+print(min_engine_size)
+print(range_engine_size)
+```
+
+There is a range of 38mpg across vehicles for highway driving with a maximum of 54mpg and a minimum of 16mpg, and a 36mpg for city driving with a maximum of 49mpg and a minimum of 13mpg. There is also a range of \$40282 between all vehicles in the data set, with a maximum price of \$45400 and a minimum price of \$5118. Finally, there is a range of 265 across all engine sizes, with the maximum size being 326 and the minimum size being 61.\n
+
+#### Tibbles for use in ggplots:
+
+In this section, I am manipulating some specific mean data into its own vectors for later use.
+
+```{r}
+
+hw_mpg <- import_data %>% group_by(make) %>% summarise(mean_hw_mpg = mean(`highway-mpg`))
+city_mpg <- import_data %>% group_by(make) %>% summarise(mean_city_mpg = mean(`city-mpg`))
+price_ <- import_data %>% group_by(make) %>% summarise(price=mean(`price`))
+hw_mpg
+city_mpg
+price_
+```
+
+#### Tables of import data to be used (make, engine size, price, highway and city mpg):
+
+Number of vehicles by make for each manufacturer in the data set
+
+```{r}
+table(import_data$make)
+```
+
+Engine sizes for all vehicles in the data set
+
+```{r}
+table(import_data$`engine-size`)
+```
+
+All prices for vehicles in the data set
+
+```{r}
+table(import_data$price)
+
+```
+
+All highway-mpg in data set
+
+```{r}
+table(import_data$`highway-mpg`)
+
+```
+
+All city-mpg in the data set
+
+```{r}
+table(import_data$`city-mpg`)
+```
+
+From the above information gathered, I can see that there are several different manufacturer's with very few vehicles in the data set (5 manufacturer's with less than 5 vehicles in the data set), which can/will skew results. There are also several manufacturers with missing data in the prices column.
+
+### Bivariate Analysis
+
+#### Mean highway mpg by make:
+
+```{r}
+hw_mpg_plot <- hw_mpg %>% group_by(make) %>% ggplot(aes(x=make, y=mean_hw_mpg, fill=make)) + geom_bar(stat="identity") + coord_flip()
+hw_mpg_plot + ggtitle("Average Highway Mpg by Manufacturer") + xlab("Manufacturer") + ylab("Average Highway Mpg") + labs(fill = "Manufacturer")
+```
+
+#### Mean city mpg by make:
+
+```{r}
+city_mpg_plot <- city_mpg %>% group_by(make) %>% ggplot(aes(x=make, y=mean_city_mpg, fill=make)) + geom_bar(stat="identity") + coord_flip()
+city_mpg_plot + ggtitle("Average City Mpg by Manufacturer") + xlab("Manufacturer") + ylab("Average City Mpg") + labs(fill = "Manufacturer")
+```
+
+As we can see from the two graphs (above), Chevrolet quite clearly has the best mpg in both the highway (46.3) and city (41.0) categories. They are followed by Isuzu (36.0, 31.0) and Honda (35.5, 30.4) respectively. We can also see that Jaguar (18.3, 14.3) is quite far behind in both categories.
+
+#### Graphs for highway and city mpg vs engine size by make:
+
+```{r}
+plot1<- ggplot(data=import_data, aes(x=`highway-mpg`, y=`engine-size`, group=`make`, color=`make`)) +  geom_point()
+plot1 + ggtitle("Highway Mpg vs. Engine Size")
+plot2 <- ggplot(data=import_data, aes(x=`city-mpg`, y=`engine-size`, group=`make`, color=`make`)) + geom_point()
+plot2 + ggtitle("City Mpg vs. Engine Size")
+```
+
+From these graphs, I can tell that there is a correlation between engine size and fuel efficiency. These findings corroborate my earlier findings with regards to average mpg (for both city and highway driving). As can be seen, the luxury manufacturers (Jaguar, Mercedes-Benz, BMW) all have large engine vehicles, with very low mpg, while manufacturers like Chevrolet, Honda, and Mitsubishi have relatively small engine vehicles, but with a much higher fuel efficiency.
+
+#### Mean price by make:
+
+```{r}
+price_plot <- price_ %>% group_by(make) %>% ggplot(aes(x=make, y=price, fill=price)) + geom_bar(stat="identity") + coord_flip()
+price_plot + ggtitle("Average Price by Manufacturer")
+```
+
+As we can see above, Jaguar, Mercedes-Benz, and BMW are quite far ahead of the competition when it comes to price. This is not that surprising, as both manufacturers are luxury vehicle manufacturers, and their vehicles have to be imported, further increasing their value. We can also see that Chevrolet is the cheapest of the data set, as well as the most fuel efficient. We can also see that three of the manufacturers in the data set had missing prices, and had to be removed (Porsche, Isuzu, and Audi).\
+These three graphs help determine which vehicle has the best fuel economy, as well as the lowest prices of vehicle by manufacturer. This directly helps to answer my first and third questions posed in the introduction.
+
+#### Highway vs city mpg by make and price:
+
+```{r}
+comp_mpg <- import_data %>% ggplot(aes(x=`highway-mpg`, y=`city-mpg`)) + geom_point(aes(col=make, size=price), na.rm=TRUE) + geom_smooth()
+comp_mpg + ggtitle("City Mpg vs. Highway Mpg \n by Manufacturer and Price")
+```
+
+As we can see from this graph, Jaguar and Mercedes-Benz are at the bottom of not only the city and highway mpg averages, but also the most expensive vehicles. Along with previous calculations and observations, this is not a very surprising result, as both manufacturers are concerned with luxury vehicles, as well as being imported into our market, which drives their price up. This graph helps display the answer to both my second and third questions stated in the introduction.
+
+#### Outliers found in engine size, highway and city mpg, and price by make:
+
+```{r}
+engine_size_outliers_plot <- ggplot(data=import_data, aes(x=`engine-size`, y=`make`, color=`make`)) + geom_boxplot(outlier.color="red", outlier.shape=8, outlier.size=5)
+engine_size_outliers_plot + stat_summary(fun=mean, geom="point", shape=20, size=4)
+
+outliers_highway_mpg <- ggplot(data=import_data, aes(x=`highway-mpg`, y=`make`, color=`make`)) + geom_boxplot(outlier.color="red", outlier.shape=8, outlier.size=5)
+outliers_highway_mpg + stat_summary(fun=mean, geom="point", shape=20, size=4)
+
+outliers_city_mpg <- ggplot(data=import_data, aes(x=`city-mpg`, y=`make`, color=`make`)) + geom_boxplot(outlier.color="red", outlier.shape=8, outlier.size=5)
+outliers_city_mpg + stat_summary(fun=mean, geom="point", shape=20, size=4)
+
+outliers_price <- ggplot(data=import_data, aes(x=`price`, y=`make`, color=`make`)) + geom_boxplot(outlier.color="red", outlier.shape=8, outlier.size=5)
+outliers_price + stat_summary(fun=mean, geom="point", shape=20, size=4)
+```
+
+## Conclusion:
+
+To begin with, I was very surprised to see that Chevrolet came first in both the mpg categories, as well as having the lowest average price per vehicle. However, I feel that my data may be somewhat skewed because there are only **three** instances of Chevrolet's in the data set, while there are **thirty-two** vehicles for Toyota present in the set. Going into this analysis, I had assumed that either Honda, Mitsubishi, or Toyota would be the most fuel efficient based on my personal experience. Research conducted in 2022 also supports my claim as, for non-hybrid vehicles (as it does not seem fair to compare hybrid to non hybrid), the Mitsubishi Mirage, the Hyundai Elantra, and the Honda Civic seem to be the most fuel efficient vehicles (1,2,3). Of these three manufacturer's, only Honda appears in the top three for the data set. Another surprise for the most fuel efficient vehicles was Isuzu. Isuzu does not even sell cars in North America anymore, as it primarly produces trucks (though again, this data might be skewed since there are only four Isuzu's in the data set).
+
+Also, from the third graph, we can quite clearly see that Jaguar and Mercedes-Benz are leading the pack for highest average prices, though Audi, Isuzu, and Porsche all have missing data, and so had to be removed.
+
+After my preliminary analysis and observations, I decided to try and figure out how these manfacturers compared to the manufacturers of the present with regards to fuel efficiency, and was quite surprised by the results. With Chevrolet being the highest rated in both fuel efficiency and price, I was slightly dismayed to find that, although there have been many breakthroughs in fuel efficiency and manufacturing upgrades, the highway and city mpg of 1985 vehicles is relatively similar to those of the modern era. I decided to ignore hybrid/electric vehicles, as it is not a realistic comparison between the two drive types (petrol powered vs. hybrid), as hybrid will always be more fuel efficient. I found that top rated vehicles of modern manufacturers have a very similar mpg to those from thirty-seven years ago.
+
+From my analysis, I can conclude that Chevrolet is the highest rated vehicle in terms of fuel efficiency, and price. Based on personal knowledge and of this data set, I can see that there has not been a large change in Chevrolet's vehicles over the years, as they still prioritize many small, fuel efficient, and inexpensive vehicles across their range of vehicles in 2022.
+
+### Citations:
+
+Data Set: <https://archive.ics.uci.edu/ml/machine-learning-databases/autos/>\
+1)<https://www.cars.com/articles/what-are-the-most-fuel-efficient-cars-for-2022-447856/> 2)<https://www.autobytel.com/coupes/car-buying-guides/the-10-most-fuel-efficient-non-hybrids-126560/>\
+3)<https://www.carhp.com/news/top-10-most-fuel-efficient-non-hybrid-cars> 4)<http://www.sthda.com/english/wiki/ggplot2-box-plot-quick-start-guide-r-software-and-data-visualization>

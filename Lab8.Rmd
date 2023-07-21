@@ -1,0 +1,100 @@
+---
+title: "Lab 8"
+author: "James McKinlay"
+date: "2022-11-22"
+output: html_document
+---
+```{r}
+library(dplyr)
+library(DMwR2)
+library(rpart.plot)
+library(tidyverse)
+
+```
+
+1.
+
+```{r}
+data(AlzheimerDisease, package = 'AppliedPredictiveModeling')
+df <- cbind(predictors, data.frame(Diagnosis = diagnosis))
+```
+
+2. 
+
+```{r}
+plot(diagnosis)
+```
+```{r}
+filter1 <- df %>% filter(Diagnosis == "Impaired")
+filter2 <- df %>% filter(Diagnosis == "Control")
+```
+
+3.
+
+```{r}
+set.seed(123)
+test_data1 <- sort(sample(nrow(filter1), nrow(filter1)*.9))
+test_data2 <- sort(sample(nrow(filter2), nrow(filter2)*.9))
+
+tr1 <- as.data.frame(df[test_data1, ])
+ts1 <- as.data.frame(df[-test_data1, ])
+
+tr2 <- as.data.frame(df[test_data2, ])
+ts2 <- as.data.frame(df[test_data2, ])
+
+tr <- rbind(tr1, tr2)
+ts <- rbind(ts1, ts2)
+```
+
+4.
+
+```{r}
+training_model <- rpartXse(Diagnosis ~ .,tr)
+preds1 <- predict(training_model, ts, type="class")
+```
+
+```{r}
+training_model2 <- rpart::rpart(Diagnosis ~ .,tr, cp=0, minsplit=1, model="true")
+preds2 <-predict(training_model2, ts, type="class")
+```
+
+5.
+
+```{r}
+classMetrics <- function(trues, preds, posClass){
+  confMatrix <- table(trues, preds)
+  posInd <- which(rownames(confMatrix) == posClass)
+
+  acc = sum(diag(confMatrix)) / sum(confMatrix)
+
+  tp <- length(which(trues == posClass & preds == posClass))
+  fp <- length(which(trues != posClass & preds == posClass))
+  tn <- length(which(trues != posClass & preds != posClass))
+  fn <- length(which(trues == posClass & preds != posClass))
+
+  prec <- tp / (tp + fp)
+  rec <- tp / (tp + fn)
+  f1 <- 2*(prec*rec)/(prec+rec)
+
+  c(acc = acc, prec = prec, rec = rec, f1 = f1)
+}
+```
+
+```{r}
+classMetrics(ts$Diagnosis, preds1, "Impaired")
+classMetrics(ts$Diagnosis, preds2, "Impaired")
+
+classMetrics(ts$Diagnosis, preds1, "Control")
+classMetrics(ts$Diagnosis, preds2, "Control")
+
+```
+6.
+
+```{r}
+rpart.plot(training_model)
+```
+7.
+
+```{r}
+head(training_model$variable.importance, 2)
+```

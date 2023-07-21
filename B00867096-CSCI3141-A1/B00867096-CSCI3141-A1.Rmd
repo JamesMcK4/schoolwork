@@ -1,0 +1,90 @@
+---
+title: "Assignment 1"
+author: "James McKinlay, B00867096"
+output: html_notebook
+---
+
+```{r}
+library(tidyverse)
+```
+
+1.1
+```{r}
+heart_disease = read.csv(file="C:/Users/jmcki/Downloads/heart-disease.names", sep = '\t')
+cleveland_data = read.csv("C:/Users/jmcki/Downloads/processed.cleveland.data", header=FALSE)
+```
+1.2
+```{r}
+colnames(heart_disease) 
+str(heart_disease)
+colnames(cleveland_data) <- c('age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal', 'num')
+
+```
+2.1
+a) There are 14 different observations/features in this dataset, as you can see below (columns).
+```{r}
+print(cleveland_data)
+```
+b)
+```{r}
+cleveland_data[,"num"]
+```
+c)
+```{r}
+distinct_values <- cleveland_data %>% unique()
+length(unique(distinct_values))
+```
+
+2.2
+
+a)
+```{r}
+which(cleveland_data == "?")
+cleveland_data <- replace(cleveland_data, cleveland_data=="?", NA)
+
+```
+
+2.4
+a) For Dage, I decided on the three aspects of low/medium/high with the age ranges of 29-45, 45-61, 61-77, to help represent the first to third quartiles.  Any data outside of these ranges would be considered above or below the first or third quartile, and may be considered an outlier if they fall past the threshold created by the boxplot rule (Q1-1.5*IQR & Q3+1.5*IQR)
+```{r}
+cleveland_data <- cleveland_data %>% mutate(Dage = cut(cleveland_data$age, 3, labels=c("low (29-45)", "medium(45-61)", "high(61-77")))
+table(Dage)
+```
+
+b)
+```{r}
+cleveland_data <- cleveland_data %>% mutate(Dchol = cut(cleveland_data$chol, 4, labels=c("low", "normal", "high", "abnormally high")))
+
+table(Dchol)
+```
+3.
+a.
+```{r}
+sum_chest_pain <- cleveland_data
+table(sum_chest_pain$cp)
+```
+b.
+```{r}
+combo_Dage_Dchol <- cleveland_data %>% count(Dage, Dchol, sort=TRUE)
+combo_Dage_Dchol
+```
+
+c.
+```{r}
+
+scaled_data <- cleveland_data %>% mutate(Schol = scale(chol))
+scaled_data
+```
+d.
+```{r}
+average_values <- gsub('.{0,1}$', '', cleveland_data$ca)
+average_values <- as.numeric(average_values, na.rm=TRUE)
+mean(average_values)
+
+```
+e.
+```{r}
+mean_data <- aggregate(cleveland_data$thalach, list(cleveland_data$cp), mean)
+mean_data <- mean(as.numeric(mean_data), cleveland_data$trestbps)
+```
+
