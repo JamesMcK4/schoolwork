@@ -1,0 +1,916 @@
+,Zone,Year,Disease,Number of Cases,"Rate per 100,000 population"
+0,Northern,2014,Malaria,0,0.0
+1,Western,2017,Creutzfeldt-Jakob Disease - Classic,0,0.0
+2,Nova Scotia,2014,Listeriosis - Invasive,5,0.5
+3,Northern,2017,Botulism,0,0.0
+4,Western,2014,Salmonellosis,55,28.0
+5,Western,2015,Tetanus,0,0.0
+6,Western,2014,Influenza,25,12.7
+7,Western,2017,Tuberculosis,1,0.5
+8,Eastern,2014,Vancomycin resistant Enterococcus (VRE),1,0.6
+9,Nova Scotia,2014,Hepatitis B - Chronic,20,2.1
+10,Central,2015,Lyme Disease - Probable,18,4.1
+11,Northern,2015,Salmonellosis,22,14.7
+12,Nova Scotia,2016,Methicillin Resistant Staphylococcus Aureus (MRSA),570,60.0
+13,nan,2014,Syphilis - Non-Infectious or Stage Pending,1,0.6
+14,Nova Scotia,2017,Campylobacteriosis,185,19.4
+15,Nova Scotia,2014,Acute Flaccid Paralysis,1,0.1
+16,Central,2015,Salmonellosis,65,14.8
+17,Northern,2014,Gonorrhea,9,5.8
+18,Central,2015,Cryptosporidiosis,10,2.3
+19,Northern,2015,Acquired Immune Deficiency Syndrome,0,0.0
+20,Western,2016,Lyme Disease - Confirmed,131,66.9
+21,Northern,2014,Creutzfeldt-Jakob Disease - Classic,0,0.0
+22,Nova Scotia,2014,West Nile Virus,0,0.0
+23,Central,2014,Amebiasis,2,0.5
+24,Western,2016,Shigellosis,1,0.5
+25,Central,2017,Gonorrhea,192,42.4
+26,Western,2014,Shellfish Poisoning,0,0.0
+27,Northern,2016,Legionellosis,0,0.0
+28,Nova Scotia,2015,Pneumococcal Disease Invasive,52,5.5
+29,Nova Scotia,2014,Lyme Disease - Probable,47,5.0
+30,Nova Scotia,2016,Lyme Disease - Probable,161,17.0
+31,Northern,2014,Listeriosis - Invasive,0,0.0
+32,Eastern,2017,Meningococcal Disease Invasive,1,0.6
+33,Northern,2015,Group A Streptococcal Disease Invasive -> non-Severe,0,0.0
+34,Western,2015,Chlamydia,438,223.8
+35,Nova Scotia,2016,Hepatitis C,299,31.5
+36,Eastern,2014,Acute Flaccid Paralysis,0,0.0
+37,Northern,2016,Shellfish Poisoning,0,0.0
+38,Nova Scotia,2015,Giardiasis,87,9.2
+39,Northern,2017,Vancomycin resistant Enterococcus (VRE),37,24.8
+40,Central,2017,Tuberculosis,5,1.1
+41,Nova Scotia,2015,Campylobacteriosis,155,16.4
+42,Northern,2016,West Nile Virus,0,0.0
+43,Central,2017,Meningococcal Disease Invasive,4,0.9
+44,zastern,2014,Listeriosis - Invasive,0,0.0
+45,Eastern,2017,Tuberculosis,2,1.3
+46,Western,2014,Malaria,2,1.0
+47,Eastern,2014,Meningococcal Disease Invasive,2,1.2
+48,Nova Scotia,2015,Hepatitis C,357,37.9
+49,Western,2014,Lyme Disease - Confirmed,51,25.9
+50,Eastern,2017,Acquired Immune Deficiency Syndrome,1,0.6
+51,Eastern,2015,Mumps,1,0.6
+52,Nova Scotia,2016,Lyme Disease - Confirmed,165,17.4
+53,Central,2015,Haemophilus influenzae Type b Invasive Disease,0,0.0
+54,Eastern,2016,Cyclosporiasis,0,0.0
+55,Central,2016,Typhoid,1,0.2
+56,Central,2016,Clostridium difficile,387,86.6
+57,Northern,2017,Clostridium difficile,111,74.4
+58,Nova Scotia,2017,West Nile Virus,0,0.0
+59,Central,2015,Acquired Immune Deficiency Syndrome,3,0.7
+60,Northern,2016,Group A Streptococcal Disease Invasive -> Severe,2,1.4
+61,Western,2014,Meningitis - Bacterial,0,0.0
+62,Central,2016,Methicillin Resistant Staphylococcus Aureus (MRSA),199,44.5
+63,Central,2016,Syphilis - Infectious,12,2.7
+64,Central,2015,Chlamydia,1725,392.7
+65,Eastern,2016,Hepatitis B - Chronic,2,1.3
+66,Central,2017,Syphilis - Infectious,18,4.0
+67,Western,2014,Legionellosis,0,0.0
+68,Central,NULL,Salmonellosis,57,12.8
+69,Central,2014,Lyme Disease - Probable,5,1.2
+70,Western,2016,Group A Streptococcal Disease Invasive -> non-Severe,6,3.1
+71,Eastern,2017,Lyme Disease - Probable,1,0.6
+72,Nova Scotia,2016,Chlamydia,2931,308.7
+73,Northern,2017,Lyme Disease - Confirmed,34,22.8
+74,Central,2014,Shigellosis,6,1.4
+75,Central,2014,Mumps,1,0.2
+76,Western,2016,Chlamydia,497,253.7
+77,Western,2017,Gonorrhea,11,5.6
+78,Western,2016,Salmonellosis,29,14.8
+79,Central,2014,Hepatitis B - Acute,1,0.2
+80,Eastern,2017,Tetanus,0,0.0
+81,Western,2015,NULL,52,26.6
+82,Eastern,2017,Hepatitis B - Acute,1,0.6
+83,Nova Scotia,2014,Malaria,3,0.3
+84,Central,2016,Campylobacteriosis,73,16.3
+85,Central,2017,Lyme Disease - Probable,23,5.1
+86,Nova Scotia,2016,Human Immunodeficiency Virus,16,1.7
+87,Central,2017,Clostridium difficile,430,95.0
+88,Eastern,2017,Legionellosis,0,0.0
+89,Eastern,2015,Meningitis - Bacterial,0,0.0
+90,Nova Scotia,2014,Creutzfeldt-Jakob Disease - Classic,2,0.2
+91,Nova Scotia,2016,Listeriosis - Invasive,4,0.4
+92,Central,2016,Hepatitis B - Acute,6,1.3
+93,Western,2017,Syphilis - Infectious,4,2.1
+94,Eastern,2017,Meningitis - Bacterial,0,0.0
+95,Western,2015,Clostridium difficile,188,96.1
+96,Nova Scotia,2017,Meningitis - Bacterial,1,0.1
+97,Eastern,2014,Clostridium difficile,158,95.3
+98,Central,2016,Pertussis,16,3.6
+99,Western,2014,Creutzfeldt-Jakob Disease - Classic,1,0.5
+100,Eastern,2017,Pneumococcal Disease Invasive,12,7.6
+101,Central,2016,Lyme Disease - Probable,13,2.9
+102,Western,2017,Acquired Immune Deficiency Syndrome,0,0.0
+103,Western,2015,Haemophilus influenzae Type b Invasive Disease,0,0.0
+104,Western,2017,Lyme Disease - Probable,248,127.3
+105,Western,2016,Haemophilus influenzae Type b Invasive Disease,0,0.0
+106,Eastern,2017,Hepatitis B - Chronic,1,0.6
+107,Northern,2015,Lyme Disease - Probable,6,4.0
+108,Western,2017,Group B Streptococcal Disease of the Newborn,0,0.0
+109,Eastern,2016,Malaria,2,1.3
+110,N/A,2014,Acute Flaccid Paralysis,0,0.0
+111,Nova Scotia,2016,Hepatitis B - Chronic,13,1.4
+112,Nova Scotia,2015,Lyme Disease - Confirmed,124,13.1
+113,Northern,2017,Meningitis - Bacterial,0,0.0
+114,Northern,2015,Acute Flaccid Paralysis,0,0.0
+115,Nova Scotia,2016,Tuberculosis,2,0.2
+116,Central,2017,Methicillin Resistant Staphylococcus Aureus (MRSA),183,40.4
+117,Eastern,2017,Salmonellosis,31,19.7
+118,Nova Scotia,2017,Salmonellosis,171,17.9
+119,Northern,2016,Hepatitis A,0,0.0
+120,Eastern,2016,Salmonellosis,20,12.6
+121,Nova Scotia,2014,Tetanus,0,0.0
+122,Central,2016,Cryptosporidiosis,6,1.3
+123,Northern,2015,Giardiasis,12,8.0
+124,Northern,2014,Amebiasis,0,0.0
+125,Western,2014,Chlamydia,395,200.9
+126,Western,2014,West Nile Virus,0,0.0
+127,Northern,2016,Rubella,0,0.0
+128,Nova Scotia,2014,Acquired Immune Deficiency Syndrome,2,0.2
+129,Nova Scotia,2015,Haemophilus influenzae Type b Invasive Disease,0,0.0
+130,Western,2015,West Nile Virus,0,0.0
+131,Northern,2017,Lyme Disease - Probable,7,4.7
+132,Northern,2014,West Nile Virus,0,0.0
+133,Eastern,2015,Creutzfeldt-Jakob Disease - Classic,0,0.0
+134,Nova Scotia,2017,Acquired Immune Deficiency Syndrome,1,0.1
+135,Northern,2017,Measles,0,0.0
+136,Central,2017,Human Immunodeficiency Virus,8,1.8
+137,Western,2016,Listeriosis - Invasive,0,0.0
+138,Western,2014,Hepatitis B - Acute,1,0.5
+139,Northern,2015,Malaria,0,0.0
+140,Western,2017,Salmonellosis,42,21.6
+141,Central,2015,Influenza,354,80.6
+142,Westfrn,2014,Lyme Disease - Probable,41,20.8
+143,Central,NULL,Meningococcal Disease Invasive,1,0.2
+144,Nova Scotia,2017,Syphilis - Non-Infectious or Stage Pending,12,1.3
+145,Central,2016,Tuberculosis,2,0.4
+146,Nova Scotia,NA,Mumps,1,0.1
+147,Northern,2016,Hepatitis B - Chronic,0,0.0
+148,Northern,2016,Clostridium difficile,122,82.4
+149,Nova Scotia,2016,Syphilis - Infectious,18,1.9
+150,Central,2015,Lyme Disease - Confirmed,16,3.2
+151,Eastern,2017,Gonorrhea,12,7.6
+152,Central,2014,Campylobacteriosis,86,20.4
+153,Central,2017,Malaria,1,0.2
+154,N/A,2014,Encephalitis - Viral,0,0.0
+155,Western,2017,Group A Streptococcal Disease Invasive -> non-Severe,1,0.5
+156,Eastern,2015,Meningococcal Disease Invasive,3,1.9
+157,Northern,2017,Human Immunodeficiency Virus,1,0.7
+158,Western,2014,Group A Streptococcal Disease Invasive -> Severe,2,1.0
+159,Western,2016,Botulism,0,0.0
+160,Northern,2017,Group A Streptococcal Disease Invasive -> non-Severe,9,6.0
+161,Nova Scotia,2015,Meningococcal Disease Invasive,7,0.7
+162,Central,2015,Vancomycin resistant Enterococcus (VRE),3,0.7
+163,Northern,2015,Shigellosis,0,0.0
+164,Western,2016,Lyme Disease - Probable,142,72.5
+165,Eastern,2015,Rubella,0,0.0
+166,Northern,2015,Creutzfeldt-Jakob Disease - Classic,0,0.0
+167,Nova Scotia,2016,Verotoxigenic E. coli,5,0.5
+168,Western,2016,Mumps,0,0.0
+169,Nova Scotia,2017,Malaria,3,0.3
+170,Northern,2016,Tetanus,0,0.0
+171,Western,2014,Toxoplasmosis,0,0.0
+172,Eastern,2014,Legionellosis,0,0.0
+173,Nova Scotia,2014,Meningococcal Disease Invasive,3,0.3
+174,Eastern,2015,Syphilis - Non-Infectious or Stage Pending,1,0.6
+175,Nova Scotia,2016,Gonorrhea,202,21.3
+176,Western,2016,Tetanus,0,0.0
+177,Eastern,2015,Human Immunodeficiency Virus,0,0.0
+178,Nova Scotia,2017,Listeriosis - Invasive,4,0.4
+179,Eastern,2015,Acquired Immune Deficiency Syndrome,0,0.0
+180,Central,2017,West Nile Virus,0,0.0
+181,Eastern,2014,Acquired Immune Deficiency Syndrome,1,0.6
+182,Central,2016,Legionellosis,1,0.2
+183,Eastern,2017,Typhoid,1,0.6
+184,Central,2016,Hepatitis C,95,21.3
+185,Eastern,2016,Hepatitis A,0,0.0
+186,Western,2014,Pneumococcal Disease Invasive,21,10.7
+187,Eastern,2015,Botulism,0,0.0
+188,Western,2014,Meningococcal Disease Invasive,1,0.5
+189,Western,2016,Legionellosis,0,0.0
+190,Nova Scotia,2017,Tuberculosis,8,0.8
+191,Central,2014,Syphilis - Infectious,50,11.9
+192,Central,2015,Verotoxigenic E. coli,3,nan
+193,Western,2015,Pertussis,53,27.1
+194,Eastern,2014,Malaria,0,0.0
+195,Northern,2014,Acquired Immune Deficiency Syndrome,0,0.0
+196,Eastern,2015,Legionellosis,0,0.0
+197,Nova Scotia,2015,Cryptosporidiosis,17,1.8
+198,Central,2017,Chlamydia,1823,402.7
+199,Western,2017,Meningococcal Disease Invasive,1,0.5
+200,Western,2015,Botulism,nan,0.0
+201,Central,2014,Toxoplasmosis,2,0.5
+202,Nova Scotia,2017,Human Immunodeficiency Virus,15,1.6
+203,Western,2014,Listeriosis - Invasive,1,0.5
+204,Central,2015,Hepatitis B - Chronic,6,1.4
+205,Eastern,2015,Shigellosis,1,0.6
+206,Nova Scotia,2015,Listeriosis - Invasive,8,0.8
+207,Eastern,2016,NA,98,61.9
+208,Northern,2016,Pneumococcal Disease Invasive,10,6.8
+209,Western,2015,Campylobacteriosis,56,28.6
+210,Northern,2017,Cryptosporidiosis,9,6.0
+211,Western,2016,Hepatitis A,0,0.0
+212,Northern,2017,Syphilis - Infectious,0,0.0
+213,Eastern,2014,Typhoid,1,0.6
+214,Western,2017,Haemophilus influenzae Type b Invasive Disease,0,0.0
+215,Nova Scotia,2015,Lyme Disease - Probable,130,13.8
+216,Nova Scotia,2016,Group B Streptococcal Disease of the Newborn,3,0.3
+217,Western,2015,Pneumococcal Disease Invasive,NA,5.1
+218,Eastern,2015,Chlamydia,387,243.2
+219,Northern,2016,Tuberculosis,0,0.0
+220,Eastern,2016,Hepatitis B - Acute,1,0.6
+221,Eastern,2016,Lyme Disease - Confirmed,0,0.0
+222,Nova Scotia,2014,Group B Streptococcal Disease of the Newborn,1,0.1
+223,Western,2014,Group A Streptococcal Disease Invasive -> non-Severe,2,1.0
+224,Western,2015,Lyme Disease - Confirmed,103,52.6
+225,Eastern,2014,Yersiniosis,0,0.0
+226,Western,2016,Campylobacteriosis,55,28.1
+227,Nova Scotia,2017,Gonorrhea,233,24.4
+228,Central,2016,Influenza,110,24.6
+229,Northern,2014,Toxoplasmosis,0,0.0
+230,Central,2017,Listeriosis - Invasive,4,0.9
+231,Nova Scotia,2014,Encephalitis - Viral,1,0.1
+232,Nova Scotia,2016,Campylobacteriosis,170,17.9
+233,Northern,2016,Malaria,1,0.7
+234,Central,2014,Hepatitis C,109,25.9
+235,Eastern,2016,Acquired Immune Deficiency Syndrome,0,0.0
+236,Northern,2014,Shigellosis,2,1.3
+237,Northern,2014,Rubella,0,
+238,Eastern,2015,Listeriosis - Invasive,1,0.6
+239,Nova Scotia,2014,Haemophilus influenzae Type b Invasive Disease,0,0.0
+240,Northern,2016,Lyme Disease - Confirmed,12,8.1
+241,Western,2014,Group B Streptococcal Disease of the Newborn,1,0.5
+242,Northern,2016,Meningitis - Bacterial,0,0.0
+243,Northern,2017,Tuberculosis,0,0.0
+244,Nova Scotia,2014,Shellfish Poisoning,0,0.0
+245,Nova Scotia,2016,Hepatitis A,11,1.2
+246,Eastern,2014,Cyclosporiasis,0,0.0
+247,Eastern,2017,Botulism,0,0.0
+248,Eastern,2014,Verotoxigenic E. coli,1,0.6
+249,N/A,2015,Lyme Disease - Confirmed,1,0.6
+250,Central,2016,Group A Streptococcal Disease Invasive -> non-Severe,4,0.9
+251,Central,2016,Haemophilus influenzae Type b Invasive Disease,0,0.0
+252,Western,2016,Vancomycin resistant Enterococcus (VRE),2,1.0
+253,Western,2014,Hepatitis B - Chronic,1,0.5
+254,Western,2014,Botulism,0,0.0
+255,Central,2014,Meningitis - Bacterial,1,0.2
+256,Western,2016,Syphilis - Infectious,3,1.5
+257,Western,2016,Group A Streptococcal Disease Invasive -> Severe,2,1.0
+258,Western,2017,Hepatitis B - Chronic,7,3.6
+259,Eastern,2014,Q-Fever,0,0.0
+260,Central,2016,Hepatitis B - Chronic,9,2.0
+261,Eastern,2017,Group B Streptococcal Disease of the Newborn,0,0.0
+262,Eastern,2017,Mumps,0,0.0
+263,Western,2017,Measles,22,11.3
+264,Central,2016,Group B Streptococcal Disease of the Newborn,1,0.2
+265,Western,2014,Human Immunodeficiency Virus,0,0.0
+266,Eastern,2017,Clostridium difficile,208,132.3
+267,Eastern,2016,Giardiasis,14,8.8
+268,Northern,2015,Hepatitis B - Acute,3,2.0
+269,Northern,2014,Meningitis - Viral,3,1.9
+270,Nova Scotia,2014,Group A Streptococcal Disease Invasive -> non-Severe,14,1.5
+271,Western,2015,Human Immunodeficiency Virus,0,0.0
+272,Nova Scotia,2014,Typhoid,2,0.2
+273,Western,2015,Group A Streptococcal Disease Invasive -> Severe,1,0.5
+274,Northern,2014,Cryptosporidiosis,14,9.0
+275,Northern,2014,Meningococcal Disease Invasive,0,0.0
+276,Central,2014,Group A Streptococcal Disease Invasive -> non-Severe,5,1.2
+277,Northern,2015,Chlamydia,310,207.8
+278,Eastern,2014,Toxoplasmosis,1,0.6
+279,Nova Scotia,2017,Hepatitis A,2,0.2
+280,Nova Scotia,2015,Mumps,6,0.6
+281,Northern,2015,Clostridium difficile,105,70.4
+282,Nova Scotia,2014,Legionellosis,3,0.3
+283,Nova Scotia,2017,Syphilis - Infectious,26,2.7
+284,Eastern,2014,Group B Streptococcal Disease of the Newborn,0,0.0
+285,Nova Scotia,2015,Botulism,0,0.0
+286,Nova Scotia,2014,Cyclosporiasis,1,0.1
+287,Nova Scotia,2015,Hepatitis B - Chronic,9,1.0
+288,Western,2016,Methicillin Resistant Staphylococcus Aureus (MRSA),150,76.6
+289,Nova Scotia,2017,Clostridium difficile,927,97.2
+290,Central,2014,Cryptosporidiosis,9,2.1
+291,Eastern,nan,Hepatitis B - Chronic,2,1.2
+292,Eastern,2014,Shigellosis,0,0.0
+293,Eastern,2014,Giardiasis,11,6.6
+294,Western,2015,Legionellosis,0,0.0
+295,Nova Scotia,2014,Lyme Disease - Confirmed,68,7.2
+296,Eastern,2016,Mumps,0,0.0
+297,Nova Scotia,2017,Hepatitis B - Acute,6,0.6
+298,Northern,2015,Cyclosporiasis,0,0.0
+299,Nova Scotia,2016,Botulism,0,0.0
+300,Western,2017,Vancomycin resistant Enterococcus (VRE),1,0.5
+301,Nova Scotia,2017,Pneumococcal Disease Invasive,49,5.1
+302,Central,2016,Chlamydia,1770,395.9
+303,Central,2017,Vancomycin resistant Enterococcus (VRE),78,17.2
+304,Western,2017,Hepatitis B - Acute,0,0.0
+305,Eastern,2015,Campylobacteriosis,6,3.8
+306,Eastern,2014,Hepatitis C,106,64.0
+307,Nova Scotia,2016,Hepatitis B - Acute,10,1.1
+308,Nova Scotia,2016,Rubella,0,0.0
+309,Nova Scotia,2015,Creutzfeldt-Jakob Disease - Classic,0,0.0
+310,Western,2016,Meningitis - Bacterial,0,0.0
+311,Northern,2015,Lyme Disease - Confirmed,4,2.7
+312,Central,2016,Cyclosporiasis,2,0.4
+313,Western,2014,Yersiniosis,0,0.0
+314,Eastern,2014,Lymphogranuloma Venereum,0,0.0
+315,Western,2017,Group A Streptococcal Disease Invasive -> Severe,4,2.1
+316,Nova Scotia,2015,Tetanus,0,0.0
+317,Central,2015,Legionellosis,7,1.6
+318,Western,2017,Shigellosis,3,1.5
+319,Western,2017,Meningitis - Bacterial,1,0.5
+320,Western,2015,Creutzfeldt-Jakob Disease - Classic,0,0.0
+321,Central,2014,Meningococcal Disease Invasive,0,0.0
+322,Western,2015,Listeriosis - Invasive,3,1.5
+323,Central,2014,Syphilis - Non-Infectious or Stage Pending,29,6.9
+324,Western,2016,Giardiasis,26,13.3
+325,Central,2017,Cyclosporiasis,1,0.2
+326,Central,2015,West Nile Virus,0,0.0
+327,Western,2016,Cyclosporiasis,0,0.0
+328,Northern,2014,Human Immunodeficiency Virus,0,0.0
+329,Nova Scotia,2017,Acute Flaccid Paralysis,0,0.0
+330,Nova Scotia,2017,Vancomycin resistant Enterococcus (VRE),121,12.7
+331,Northern,2017,Hepatitis A,0,0.0
+332,Western,2017,Legionellosis,0,0.0
+333,Northern,2015,Verotoxigenic E. coli,1,0.7
+334,Western,2014,Encephalitis - Viral,0,0.0
+335,Northern,2014,Methicillin Resistant Staphylococcus Aureus (MRSA),109,70.4
+336,Nova Scotia,2014,Shigellosis,9,1.0
+337,Eastern,2015,Vancomycin resistant Enterococcus (VRE),0,0.0
+338,Western,2017,Syphilis - Non-Infectious or Stage Pending,1,0.5
+339,Eastern,2015,Typhoid,0,0.0
+340,Western,2015,Shigellosis,1,0.5
+341,Nova Scotia,2014,Botulism,0,0.0
+342,Western,2017,Human Immunodeficiency Virus,3,1.5
+343,Western,2017,Tuberculosis,1,0.5
+344,Eastern,2014,Tuberculosis,0,0.0
+345,Western,2016,Rubella,0,0.0
+346,Central,,Legionellosis,8,1.8
+347,Eastern,2015,Salmonellosis,38,23.9
+348,Eastern,2016,Group B Streptococcal Disease of the Newborn,1,0.6
+349,Central,2017,Pneumococcal Disease Invasive,17,3.8
+350,Eastern,2015,West Nile Virus,0,0.0
+351,Western,NA,Mumps,0,0.0
+352,Western,2015,Hepatitis B - Chronic,1,0.5
+353,Western,2014,Verotoxigenic E. coli,2,1.0
+354,Eastern,2014,Lyme Disease - Probable,0,0.0
+355,Central,2014,Lymphogranuloma Venereum,0,0.0
+356,Northern,2015,Tetanus,0,0.0
+357,Central,2016,Syphilis - Non-Infectious or Stage Pending,12,2.7
+358,Western,2016,Meningococcal Disease Invasive,1,0.5
+359,Nova Scotia,2015,Shellfish Poisoning,0,0.0
+360,Central,2017,Giardiasis,46,10.2
+361,Central,2015,Pneumococcal Disease Invasive,22,5.0
+362,Nova Scotia,2017,Haemophilus influenzae Type b Invasive Disease,1,0.1
+363,Western,2014,Shigellosis,1,0.5
+364,Northern,2015,Meningococcal Disease Invasive,1,-0.7
+365,Northern,2017,Methicillin Resistant Staphylococcus Aureus (MRSA),121,81.1
+366,Northern,2016,Vancomycin resistant Enterococcus (VRE),NULL,0.7
+367,Western,2015,Lyme Disease - Probable,106,54.2
+368,Northern,2014,Meningitis - Bacterial,1,0.6
+369,Eastern,2016,Malaria,2,1.3
+370,Eastern,2015,Cryptosporidiosis,3,1.9
+371,Western,2015,Verotoxigenic E. coli,1,0.5
+372,Eastern,2014,West Nile Virus,0,0.0
+373,Northern,2014,Typhoid,0,0.0
+374,Central,2017,Hepatitis B - Chronic,10,2.2
+375,Eastern,2015,Gonorrhea,6,3.8
+376,Western,2015,Cryptosporidiosis,2,1.0
+377,Eastern,2017,Chlamydia,381,242.3
+378,Eastern,2017,Syphilis - Infectious,4,2.5
+379,Western,2014,Amebiasis,1,0.5
+380,Eastern,2016,Haemophilus influenzae Type b Invasive Disease,0,0.0
+381,Nova Scotia,2016,Acute Flaccid Paralysis,0,0.0
+382,Central,2014,Tetanus,0,0.0
+383,Eastern,2016,Shellfish Poisoning,0,0.0
+384,Western,2017,Lyme Disease - Confirmed,223,114.5
+385,Nova Scotia,2016,Cryptosporidiosis,27,2.8
+386,Eastern,2016,Rubella,0,0.0
+387,Northern,2015,Syphilis - Infectious,2,1.3
+388,Northern,2017,Acquired Immune Deficiency Syndrome,0,0.0
+389,Nova Scotia,2014,Pertussis,11,1.2
+390,Eastern,2017,Syphilis - Non-Infectious or Stage Pending,3,1.9
+391,Eastern,2015,Cyclosporiasis,0,0.0
+392,Central,2017,Haemophilus influenzae Type b Invasive Disease,1,0.2
+393,Northern,2017,Haemophilus influenzae Type b Invasive Disease,0,0.0
+394,Western,2014,Hepatitis C,29,14.7
+395,Northern,2017,Creutzfeldt-Jakob Disease - Classic,0,0.0
+396,Central,2016,Shigellosis,6,1.3
+397,Northern,2014,Hepatitis B - Acute,0,0.0
+398,Northern,2016,Campylobacteriosis,22,14.9
+399,Northern,2017,Meningococcal Disease Invasive,0,0.0
+400,Central,2015,Hepatitis B - Acute,5,1.1
+401,Eastern,2015,Tetanus,0,0.0
+402,Eastern,2016,Campylobacteriosis,19,12.0
+403,Nova Scotia,2014,Amebiasis,3,0.3
+404,Western,2016,Verotoxigenic E. coli,1,0.5
+405,Eastern,2015,Group A Streptococcal Disease Invasive -> Severe,2,1.3
+406,Eastern,2014,Haemophilus influenzae Type b Invasive Disease,0,0.0
+407,Central,2016,Malaria,3,0.7
+408,Northern,2014,Group B Streptococcal Disease of the Newborn,0,0.0
+409,Western,2014,Tuberculosis,0,0.0
+410,Eastern,2015,Malaria,1,0.6
+411,Northern,2015,Mumps,0,0.0
+412,Eastern,2014,Human Immunodeficiency Virus,1,0.6
+413,Northern,2015,Shellfish Poisoning,0,0.0
+414,Western,2016,Group B Streptococcal Disease of the Newborn,0,0.0
+415,Eastern,2014,Pertussis,0,0.0
+416,Northern,2016,Giardiasis,20,13.5
+417,Nova Scotia,2017,Shigellosis,10,1.0
+418,Nova Scotia,2017,Measles,29,3.0
+419,Eastern,2016,Typhoid,0,0.0
+420,Nova Scotia,2015,Typhoid,0,0.0
+421,Western,2014,Haemophilus influenzae Type b Invasive Disease,0,0.0
+422,Nova Scotia,2017,Group B Streptococcal Disease of the Newborn,3,0.3
+423,Western,2014,Syphilis - Infectious,4,2.0
+424,Central,2016,Acute Flaccid Paralysis,0,0.0
+425,Nova Scotia,2016,Acquired Immune Deficiency Syndrome,1,0.1
+426,Eastern,2016,Human Immunodeficiency Virus,0,0.0
+427,Western,2014,Lymphogranuloma Venereum,0,nan
+428,Northern,2016,Lyme Disease - Probable,6,4.1
+429,Nova Scotia,2014,Syphilis - Infectious,63,6.7
+430,Nova Scotia,2015,Methicillin Resistant Staphylococcus Aureus (MRSA),625,66.3
+431,Eastern,2015,Pneumococcal Disease Invasive,10,6.3
+432,Nova Scotia,2016,Pertussis,63,6.6
+433,Northern,2016,Methicillin Resistant Staphylococcus Aureus (MRSA),130,87.8
+434,Eastern,2014,Hepatitis A,1,0.6
+435,Eastern,2014,Lyme Disease - Confirmed,2,1.2
+436,Central,2014,Yersiniosis,1,0.2
+437,Central,N/A,Chlamydia,1680,398.5
+438,Nova Scotia,2015,Syphilis - Non-Infectious or Stage Pending,28,3.0
+439,Eastern,2015,Verotoxigenic E. coli,0,0.0
+440,Central,2015,Acute Flaccid Paralysis,0,0.0
+441,Northern,2017,Mumps,0,0.0
+442,Northern,2017,Hepatitis B - Acute,1,0.7
+443,Npva Scotua,2017,Chlamydia,2988,313.3
+444,Northern,2014,Haemophilus influenzae Type b Invasive Disease,0,0.0
+445,Eastern,2016,Clostridium difficile,186,117.4
+446,Eastern,2015,Methicillin Resistant Staphylococcus Aureus (MRSA),132,83.0
+447,Northern,2014,Vancomycin resistant Enterococcus (VRE),7,4.5
+448,Central,2015,Typhoid,0,0.0
+449,Northern,2017,West Nile Virus,0,0.0
+450,Northern,2015,Hepatitis B - Chronic,2,1.3
+451,Nova Scotia,2014,Meningitis - Viral,15,1.6
+452,Nova Scotia,2014,Pneumococcal Disease Invasive,66,7.0
+453,Central,2014,Encephalitis - Viral,0,0.0
+454,Nova Scotia,2014,Chlamydia,2628,279.9
+455,Western,2015,Mumps,0,0.0
+456,Western,2014,Acquired Immune Deficiency Syndrome,0,0.0
+457,Northern,2014,Group A Streptococcal Disease Invasive -> non-Severe,6,3.9
+458,Northern,2014,Yersiniosis,1,0.6
+459,Eastern,2016,Chlamydia,394,248.7
+460,Eastern,2017,Creutzfeldt-Jakob Disease - Classic,0,0.0
+461,Northern,2016,Typhoid,0,0.0
+462,Northern,2016,Listeriosis - Invasive,0,0.0
+463,Nova Scotia,2015,Acquired Immune Deficiency Syndrome,3,0.3
+464,Eastern,2014,Botulism,0,0.0
+465,Central,2015,Shellfish Poisoning,0,0.0
+466,Central,2014,Hepatitis A,2,0.5
+467,Eastern,2017,Listeriosis - Invasive,0,0.0
+468,Eastern,2014,Rubella,0,0.0
+469,Eastern,2016,Acute Flaccid Paralysis,0,0.0
+470,Northern,2016,Chlamydia,269,181.6
+471,Eastern,2016,Meningitis - Bacterial,0,0.0
+472,Eastern,2014,Amebiasis,0,0.0
+473,Nova Scotia,2016,Malaria,6,0.6
+474,Central,nan,Botulism,0,0.0
+475,Eastern,2014,Mumps,0,0.0
+476,Nova Scotia,2016,Haemophilus influenzae Type b Invasive Disease,0,0.0
+477,Nova Scotia,2015,Clostridium difficile,812,86.1
+478,Nova Scotia,2015,Group A Streptococcal Disease Invasive -> non-Severe,15,1.6
+479,Central,2017,Campylobacteriosis,84,18.6
+480,Central,2017,Lyme Disease - Confirmed,47,10.4
+481,Nova Scotia,2015,Shigellosis,5,0.5
+482,Western,2014,Giardiasis,26,13.2
+483,Western,2014,Hepatitis E,0,0.0
+484,Central,2015,Group B Streptococcal Disease of the Newborn,2,0.5
+485,Northern,2015,Methicillin Resistant Staphylococcus Aureus (MRSA),94,63.0
+486,Central,2015,Methicillin Resistant Staphylococcus Aureus (MRSA),221,50.3
+487,Central,2017,Shigellosis,4,0.9
+488,Eastern,2016,Group A Streptococcal Disease Invasive -> Severe,1,0.6
+489,Nova Scotia,2015,Human Immunodeficiency Virus,17,1.8
+490,Northern,2017,Campylobacteriosis,21,14.1
+491,Central,2014,Rubella,0,0.0
+492,Northern,2014,Clostridium difficile,62,40.0
+493,Western,2015,Syphilis - Infectious,1,0.5
+494,Western,2016,Tuberculosis,0,0.0
+495,Northern,2016,Acute Flaccid Paralysis,0,0.0
+496,Eastern,2015,Haemophilus influenzae Type b Invasive Disease,0,0.0
+497,Western,2016,Influenza,81,41.3
+498,Northern,2017,Salmonellosis,22,14.7
+499,Central,2015,Meningitis - Bacterial,0,0.0
+500,Central,2014,Acquired Immune Deficiency Syndrome,1,0.2
+501,Nova Scotia,2014,Hepatitis A,3,0.3
+502,Nova Scotia,2016,Syphilis - Non-Infectious or Stage Pending,17,1.8
+503,Western,2016,Malaria,0,0.0
+504,Western,2017,Mumps,0,0.0
+505,Northern,2014,Lymphogranuloma Venereum,0,0.0
+506,Nova Scotia,2016,Typhoid,-1,0.1
+507,Eastern,2015,Influenza,143,89.9
+508,Western,2017,Acute Flaccid Paralysis,0,0.0
+509,Eastern,2017,Shigellosis,1,0.6
+510,Western,2015,Vancomycin resistant Enterococcus (VRE),1,0.5
+511,Eastern,2017,Hepatitis C,83,52.8
+512,Nova Scotia,2017,Typhoid,2,0.2
+513,Nova Scotia,NULL,Rubella,0,0.0
+514,Eastern,2017,Malaria,0,0.0
+515,Central,2015,Mumps,5,1.1
+516,Western,2016,Acute Flaccid Paralysis,0,0.0
+517,Western,2015,Gonorrhea,15,7.7
+518,Central,2016,Meningitis - Bacterial,0,0.0
+519,Northern,2017,Tetanus,0,0.0
+520,Western,2017,Botulism,0,0.0
+521,Western,2016,Acquired Immune Deficiency Syndrome,1,0.5
+522,Central,2014,Legionellosis,3,0.7
+523,Eastern,2015,Group B Streptococcal Disease of the Newborn,1,0.6
+524,Northern,2014,Lyme Disease - Probable,1,0.6
+525,Eastern,2014,Campylobacteriosis,12,7.2
+526,Nova Scotia,2016,Giardiasis,100,10.5
+527,Northern,2014,Giardiasis,12,7.8
+528,Central,2014,Q-Fever,0,0.0
+529,Nova Scotia,2016,Creutzfeldt-Jakob Disease - Classic,1,0.1
+530,Northern,2016,Botulism,0,0.0
+531,Eastern,2014,Hepatitis E,0,0.0
+532,Eastern,2014,Hepatitis B - Acute,2,1.2
+533,Western,2015,Cyclosporiasis,1,0.5
+534,Nova Scotia,2017,Meningococcal Disease Invasive,6,0.6
+535,Western,2015,Hepatitis A,0,0.0
+536,Central,2017,Hepatitis C,92,20.3
+537,Central,2016,Gonorrhea,160,35.8
+538,Eastern,2016,Creutzfeldt-Jakob Disease - Classic,0,0.0
+539,Northern,2016,Creutzfeldt-Jakob Disease - Classic,0,0.0
+540,Central,2014,Shellfish Poisoning,0,0.0
+541,Northern,2015,Influenza,75,50.3
+542,Nova Scotia,2017,Creutzfeldt-Jakob Disease - Classic,1,0.1
+543,Western,2015,Group B Streptococcal Disease of the Newborn,0,0.0
+544,Northern,2017,Acute Flaccid Paralysis,0,0.0
+545,Northern,2014,Influenza,49,31.6
+546,Nova Scotia,2015,Tuberculosis,6,0.6
+547,Central,2016,Verotoxigenic E. coli,4,0.9
+548,Eastern,2016,Pneumococcal Disease Invasive,17,10.7
+549,Central,2015,Pertussis,35,8.0
+550,Nova Scotia,2016,Vancomycin resistant Enterococcus (VRE),13,1.4
+551,Nova Scotia,2016,Pneumococcal Disease Invasive,66,7.0
+552,Western,2016,Syphilis - Non-Infectious or Stage Pending,4,2.0
+553,Eastern,2017,Vancomycin resistant Enterococcus (VRE),5,3.2
+554,Eastern,2017,Giardiasis,17,10.8
+555,Northern,2016,Syphilis - Non-Infectious or Stage Pending,1,0.7
+556,Western,nan,Meningitis - Bacterial,0,0.0
+557,Nova Scotia,2017,Group A Streptococcal Disease Invasive -> Severe,16,1.7
+558,Central,2014,Typhoid,N/A,0.2
+559,Eastern,2016,Shigellosis,1,0.6
+560,Nova Scotia,2014,Influenza,272,29.0
+561,Eastern,2017,Group A Streptococcal Disease Invasive -> Severe,1,0.6
+562,Eastern,2017,Group A Streptococcal Disease Invasive -> non-Severe,4,2.5
+563,Central,2015,Hepatitis A,1,0.2
+564,Northern,2017,Group B Streptococcal Disease of the Newborn,1,0.7
+565,Nova Scotia,2016,Meningococcal Disease Invasive,4,0.4
+566,Western,2016,Human Immunodeficiency Virus,1,0.5
+567,Northern,2015,Syphilis - Non-Infectious or Stage Pending,1,0.7
+568,Northern,2016,Gonorrhea,14,9.5
+569,Central,2015,Botulism,0,0.0
+570,Central,2017,Verotoxigenbc E. soli,12,2.7
+571,Central,2014,Pertussis,8,1.9
+572,Nova Scotia,2016,Cyclosporiasis,2,0.2
+573,Nova Scotia,2015,Syphilis - Infectious,43,4.6
+574,Nova Scotia,2015,Group A Streptococcal Disease Invasive -> Severe,10,1.1
+575,Eastern,2015,Acute Flaccid Paralysis,0,0.0
+576,Nova Scotia,2014,Acquired Immune Deficiency Syndrome,2,0.2
+577,Eastern,2017,Verotoxigenic E. coli,8,5.1
+578,Western,2015,Group A Streptococcal Disease Invasive -> non-Severe,2,1.0
+579,Nova Scotia,2017,Cryptosporidiosis,41,4.3
+580,Central,2015,Campylobacteriosis,74,16.9
+581,Nova Scotia,2017,Verotoxigenic E. coli,21,2.2
+582,Western,2015,Giardiasis,23,11.8
+583,Central,2016,Mumps,1,0.2
+584,Nova Scotia,2017,Legionellosis,9,0.9
+585,Eastern,2016,Botulism,0,0.0
+586,Eastern,2017,Pertussis,6,3.8
+587,Western,2015,Tuberculosis,0,0.0
+588,Northern,2016,Acquired Immune Deficiency Syndrome,0,0.0
+589,Western,N/A,Creutzfeldt-Jakob Disease - Classic,0,0.0
+590,Western,2016,Typhoid,0,0.0
+591,Northern,2015,Cryptosporidiosis,2,1.3
+592,Western,2014,Cyclosporiasis,0,0.0
+593,Northern,2015,West Nile Virus,0,0.0
+594,Central,2017,Creutzfeldt-Jakob Disease - Classic,1,0.2
+595,Central,2014,Hepatitis B - Chronic,16,3.8
+596,Northern,2015,Hepatitis A,0,0.0
+597,Nova Scotia,2015,Hepatitis B - Acute,9,1.0
+598,Eastern,2016,Lyme Disease - Probable,0,0.0
+599,Central,2017,Hepatitis B - Acute,4,0.9
+600,Western,2014,Typhoid,0,0.0
+601,Central,2017,Acquired Immune Deficiency Syndrome,0,0.0
+602,Northern,2017,Hepatitis C,84,56.3
+603,Central,2015,Malaria,3,0.7
+604,Northern,2016,Group A Streptococcal Disease Invasive -> non-Severe,NA,0.7
+605,Western,2014,Syphilis - Non-Infectious or Stage Pending,3,1.5
+606,Northern,2014,Syphilis - Infectious,5,3.2
+607,Nova Scotia,2016,Salmonellosis,139,14.6
+608,Northern,2017,Shigellosis,2,1.3
+609,Nova Scotia,2014,Typhoid,2,0.2
+610,Northern,2014,Botulism,0,0.0
+611,Northern,2014,Hepatitis C,79,51.0
+612,Northern,2016,Shigellosis,2,1.4
+613,Eastern,2016,Hepatitis C,91,57.4
+614,Western,2015,Acute Flaccid Paralysis,0,0.0
+615,Western,2016,Hepatitis B - Chronic,2,1.0
+616,Nova Scotia,2015,Legionellosis,7,0.7
+617,Northern,2016,Cryptosporidiosis,6,4.1
+618,Northern,2017,Chlamydia,NA,195.8
+619,Northern,2016,Meningococcal Disease Invasive,0,N/A
+620,Northern,2015,Giardiasis,12,8.0
+621,Central,2014,Tuberculosis,6,1.4
+622,Northern,2015,Pneumococcal Disease Invasive,10,6.7
+623,Central,2014,Methicillin Resistant Staphylococcus Aureus (MRSA),202,47.9
+624,Western,2017,Pneumococcal Disease Invasive,11,5.6
+625,Northern,2017,Cyclosporiasis,1,0.7
+626,N/A,2015,Group B Streptococcal Disease of the Newborn,0,0.0
+627,Nova Scotia,2017,Pertussis,45,4.7
+628,Central,2015,Cyclosporiasis,2,0.5
+629,Central,2016,Rubella,0,0.0
+630,Central,2017,Tetanus,0,0.0
+631,Central,2017,Group A Streptococcal Disease Invasive -> Severe,6,1.3
+632,Eastern,2016,Vancomycin resistant Enterococcus (VRE),5,3.2
+633,Northern,2015,Typhoid,0,0.0
+634,Nova Scotia,2015,Rubella,0,0.0
+635,Nova Scotia,2014,Meningitis - Bacterial,2,0.2
+636,Central,2015,Shigellosis,3,0.7
+637,Northern,2015,Haemophilus influenzae Type b Invasive Disease,0,0.0
+638,Central,2015,Group A Streptococcal Disease Invasive -> Severe,3,0.7
+639,Western,2014,Rubella,0,0.0
+640,Northern,2017,Legionellosis,1,0.7
+641,Northern,2014,Salmonellosis,35,22.6
+642,Central,2016,Listeriosis - Invasive,3,0.7
+643,Nova Scotia,2014,Clostridium difficile,609,64.9
+644,Nova Scotia,2014,Campylobacteriosis,180,19.2
+645,Western,2016,West Nile Virus,0,0.0
+646,Western,2017,Hepatitis C,36,18.5
+647,Western,2017,West Nile Virus,0,0.0
+648,Northern,2014,Chlamydia,261,168.6
+649,Central,2014,Verotoxigenic E. coli,4,0.9
+650,Nova Scotia,2016,West Nile Virus,0,0.0
+651,Central,2015,Rubella,0,0.0
+652,Northern,2016,Salmonellosis,33,22.3
+653,Eastern,2017,Methicillin Resistant Staphylococcus Aureus (MRSA),83,52.8
+654,Central,2017,Cryptosporidiosis,16,3.5
+655,Nova Scotia,2017,Group A Streptococcal Disease Invasive -> non-Severe,30,3.1
+656,Nova Scotia,2014,Lymphogranuloma Venereum,0,0.0
+657,Northern,2014,Hepatitis E,0,
+658,Eastern,2015,Syphilis - Infectious,0,0.0
+659,Northern,2017,Hepatitis B - Chronic,0,0.0
+660,Central,2014,Malaria,1,0.2
+661,Western,2017,Clostridium difficile,178,91.4
+662,Eastern,2015,Tuberculosis,0,0.0
+663,Western,2017,Giardiasis,22,11.3
+664,NA,2017,Malaria,0,0.0
+665,Northern,2014,Lyme Disease - Confirmed,2,1.3
+666,Eastern,2015,Hepatitis B - Chronic,0,0.0
+667,Central,2014,Creutzfeldt-Jakob Disease - Classic,1,0.2
+668,Central,2014,Pneumococcal Disease Invasive,24,5.7
+669,Nova Scotia,2014,Group A Streptococcal Disease Invasive -> Severe,8,0.9
+670,Eastern,2016,West Nile Virus,0,0.0
+671,Northern,2014,Legionellosis,0,0.0
+672,Western,2017,Cryptosporidiosis,11,5.6
+673,Nova Scotia,2014,Syphilis - Non-Infectious or Stage Pending,37,3.9
+674,Eastern,2015,Shellfish Poisoning,0,0.0
+675,Eastern,2015,Pertussis,12,7.5
+676,Nova Scotia,2016,Meningitis - Bacterial,0,0.0
+677,Central,2016,West Nile Virus,0,0.0
+678,Central,2014,Meningitis - Viral,11,2.6
+679,Eastern,2015,Giardiasis,9,5.7
+680,Western,2015,Acquired Immune Deficiency Syndrome,0,0.0
+681,Nova Scotia,2015,Malaria,4,0.4
+682,Eastern,2016,Meningococcal Disease Invasive,1,0.6
+683,Eastern,2017,Human Immunodeficiency Virus,1,0.6
+684,Eastern,2017,Lyme Disease - Confirmed,3,1.9
+685,Nova Scotia,2017,Lyme Disease - Confirmed,307,32.2
+686,Nova Scotia,2015,Salmonellosis,169,17.9
+687,Northern,2014,Pertussis,1,0.6
+688,Northern,2015,Human Immunodeficiency Virus,0,0.0
+689,Northern,2017,Gonorrhea,18,12.1
+690,Central,2015,Gonorrhea,101,23.0
+691,Northern,2016,Haemophilus influenzae Type b Invasive Disease,0,0.0
+692,Eastern,N/A,Cryptosporidiosis,5,3.2
+693,Northern,2016,Influenza,36,24.3
+694,Nova Scotia,2016,Group A Streptococcal Disease Invasive -> Severe,7,0.7
+695,Central,2014,Hepatitis E,0,0.0
+696,Northern,2014,Mumps,0,0.0
+697,Western,2016,Gonorrhea,19,9.7
+698,Nova Scotia,2017,Giardiasis,93,9.7
+699,Central,2017,Hepatitis A,2,0.4
+700,Nova Scotia,2017,Botulism,0,0.0
+701,Western,2017,Methicillin Resistant Staphylococcus Aureus (MRSA),135,69.3
+702,Central,2014,Lyme Disease - Confirmed,13,3.1
+703,Eastern,2014,Meningitis - Bacterial,0,0.0
+704,Nova Scotia,2014,Human Immunodeficiency Virus,10,1.1
+705,Central,2016,Acquired Immune Deficiency Syndrome,0,0.0
+706,Western,2014,Pertussis,2,1.0
+707,Nova Scotia,2014,Giardiasis,90,9.6
+708,Eastern,2016,Syphilis - Infectious,1,0.6
+709,Northern,2014,Campylobacteriosis,27,17.4
+710,,2014,Verotoxigenic E. coli,3,1.9
+711,Central,2016,Botulism,0,0.0
+712,Northern,2016,Hepatitis C,81,54.7
+713,Nova Scotia,2016,Influenza,325,34.2
+714,Western,2015,Hepatitis B - Acute,1,0.5
+715,Eastern,2017,Acute Flaccid Paralysis,0,0.0
+716,Western,2015,Typhoid,0,0.0
+717,Central,2017,Typhoid,0,0.0
+718,Western,2017,Chlamydia,492,252.6
+719,Central,2015,Syphilis - Non-Infectious or Stage Pending,25,5.7
+720,Nova Scotia,2015,Verotoxigenic E. coli,5,0.5
+721,Western,2016,Hepatitis C,32,16.3
+722,Central,2015,Creutzfeldt-Jakob Disease - Classic,0,0.0
+723,Northern,2014,Cyclosporiasis,0,0.0
+724,Eastern,2016,Tuberculosis,0,0.0
+725,Eastern,2014,Tetanus,0,0.0
+726,Central,2015,Giardiasis,43,9.8
+727,Eastern,2016,Gonorrhea,9,5.7
+728,Northern,2015,Botulism,0,0.0
+729,Eastern,2014,Cryptosporidiosis,2,1.2
+730,Central,2015,Human Immunodeficiency Virus,12,2.7
+731,Western,2014,Clostridium difficile,134,68.1
+732,Western,2014,Campylobacteriosis,55,28.0
+733,Nova Scotia,2014,Salmonellosis,204,21.7
+734,Eastern,2014,Shellfish Poisoning,0,0.0
+735,Northern,2016,Hepatitis B - Acute,1,0.7
+736,Nova Scotia,2015,Pertussis,110,11.7
+737,Western,2016,Clostridium difficile,179,91.4
+738,Eastern,2016,Legionellosis,0,0.0
+739,,2016,Human Immunodeficiency Virus,2,1.4
+740,Nova Scotia,2014,Hepatitis E,0,0.0
+741,Nova Scotia,2014,Q-Fever,0,0.0
+742,Northern,2015,Legionellosis,0,0.0
+743,Nova Scotia,2017,Hepatitis B - Chronic,18,1.9
+744,Eastern,2015,Lyme Disease - Probable,0,0.0
+745,Eastern,2016,Cryptosporidiosis,4,2.5
+746,Northern,2015,Campylobacteriosis,19,12.7
+747,Eastern,2016,Verotoxigenic E. coli,0,0.0
+748,Nova Scotia,2014,Hepatitis C,323,34.4
+749,Central,2015,Clostridium difficile,344,78.4
+750,Central,2016,N/A,40,8.9
+751,Central,2014,West Nile Virus,0,0.0
+752,Western,2014,Tetanus,0,0.0
+753,Nova Scotia,2014,Tuberculosis,7,0.7
+754,Eastern,2015,Hepatitis B - Acute,0,0.0
+755,Western,2016,Cryptosporidiosis,11,5.6
+756,Central,2017,N/A,0,0.0
+757,Northern,2016,Syphilis - Infectious,2,1.4
+758,Northern,2015,Gonorrhea,11,7.4
+759,Central,2017,Salmonellosis,76,16.8
+760,Nova Scotia,2015,Meningitis - Bacterial,0,0.0
+761,Nova Scotia,2014,Gonorrhea,113,12.0
+762,Eastern,2016,Group A Streptococcal Disease Invasive -> non-Severe,1,0.6
+763,Central,2017,Pertussis,11,2.4
+764,Northern,2017,Listeriosis - Invasive,0,0.0
+765,Eastern,2016,Syphilis - Non-Infectious or Stage Pending,0,0.0
+766,Western,2017,Hepatitis A,0,0.0
+767,Eastern,2014,Gonorrhea,1,0.6
+768,Eastern,2014,Creutzfeldt-Jakob Disease - Classic,0,nan
+769,Western,2014,Methicillin Resistant Staphylococcus Aureus (MRSA),214,108.8
+770,Northern,2016,Cyclosporiasis,0,0.0
+771,Nova Scotia,2017,Hepatitis C,295,30.9
+772,Northern,2014,Hepatitis B - Chronic,1,0.6
+773,Central,2014,Group A Streptococcal Disease Invasive -> Severe,1,0.2
+774,Northern,2014,Pneumococcal Disease Invasive,10,6.5
+775,Northern,2014,Encephalitis - Viral,1,0.6
+776,Eastern,2017,Campylobacteriosis,16,10.2
+777,Central,2014,Influenza,142,33.7
+778,Northern,2014,Group A Streptococcal Disease Invasive -> Severe,3,1.9
+779,Nova Scotia,2015,Chlamydia,2860,
+780,Nova Scotia,NULL,Acute Flaccid Paralysis,0,0.0
+781,Central,2014,Haemophilus influenzae Type b Invasive Disease,0,0.0
+782,Central,2014,Salmonellosis,78,18.5
+783,Central,nan,Syphilis - Non-Infectious or Stage Pending,6,1.3
+784,Northern,2016,Mumps,0,0.0
+785,Central,2014,Cyclosporiasis,1,0.2
+786,Western,2017,,2,1.0
+787,Nova Scotia,2016,Group A Streptococcal Disease Invasive -> non-Severe,12,1.3
+788,Central,2014,Vancomycin resistant Enterococcus (VRE),8,1.9
+789,Nova Scotia,2015,Vancomycin resistant Enterococcus (VRE),4,0.4
+790,Western,2014,Hepatitis A,0,0.0
+791,Nova Scotia,2016,Clostridium difficile,874,92.0
+792,Central,2014,Human Immunodeficiency Virus,9,2.1
+793,Northern,2017,Verotoxigenic E. coli,0,0.0
+794,Western,2015,Meningococcal Disease Invasive,2,1.0
+795,Western,2016,Pneumococcal Disease Invasive,16,8.2
+796,Eastern,2016,Listeriosis - Invasive,1,0.6
+797,Central,2016,Group A Streptococcal Disease Invasive -> Severe,2,NA
+798,Northern,2014,Acute Flaccid Paralysis,1,0.6
+799,Northern,2015,Meningitis - Bacterial,0,0.0
+800,Eastern,2015,Hepatitis A,0,0.0
+801,Nova Scotia,NA,Mumps,1,0.1
+802,Northern,2015,Pertussis,10,6.7
+803,Central,2015,Listeriosis - Invasive,4,0.9
+804,Northern,2016,Group B Streptococcal Disease of the Newborn,1,0.7
+805,Western,2014,Q-Fever,0,0.0
+806,Eastern,2016,Tetanus,0,0.0
+807,Eastern,2014,Syphilis - Non-Infectious or Stage Pending,4,2.4
+808,Western,2014,Vancomycin resistant Enterococcus (VRE),1,0.5
+809,Eastern,2017,Haemophilus influenzae Type b Invasive Disease,0,0.0
+810,Northern,2017,Pneumococcal Disease Invasive,9,6.0
+811,Nova Scotia,2014,Verotoxigenic E. coli,10,1.1
+812,Nova Scotia,2016,Shigellosis,10,1.1
+813,Western,2015,Rubella,0,0.0
+814,Central,2016,Meningococcal Disease Invasive,2,0.4
+815,Central,2016,Pneumococcal Disease Invasive,23,5.1
+816,Northern,2017,Pertussis,1,0.7
+817,Central,2017,Measles,7,1.5
+818,Northern,2014,Tetanus,0,0.0
+819,Eastern,2016,Pertussis,6,3.8
+820,Central,2014,Listeriosis - Invasive,4,0.9
+821,Western,2014,Gonorrhea,13,6.6
+822,Northern,2014,Hepatitis A,0,0.0
+823,Western,2017,Campylobacteriosis,64,32.9
+824,Eastern,2014,Group A Streptococcal Disease Invasive -> non-Severe,1,0.6
+825,Western,2017,Cyclosporiasis,0,0.0
+826,Eastern,2016,Methicillin Resistant Staphylococcus Aureus (MRSA),91,57.4
+827,Central,2014,Acute Flaccid Paralysis,0,0.0
+828,Nova Scotia,2014,Methicillin Resistant Staphylococcus Aureus (MRSA),644,68.6
+829,Nova Scotia,2015,Influenza,718,76.1
+830,Central,2016,Hepatitis A,11,2.5
+831,Eastern,2015,Clostridium difficile,175,110.0
+832,Northern,2015,Tuberculosis,0,0.0
+833,Northern,2014,Tuberculosis,1,0.6
+834,Eastern,2014,Methicillin Resistant Staphylococcus Aureus (MRSA),119,71.8
+835,Western,2015,Malaria,0,0.0
+836,Central,2017,Group A Streptococcal Disease Invasive -> non-Severe,16,3.5
+837,Nova Scotia,2014,Cryptosporidiosis,32,3.4
+838,,2016,Creutzfeldt-Jakob Disease - Classic,1,0.2
+839,Eastern,2014,Influenza,56,33.8
+840,Central,2015,Hepatitis C,108,23.5
+841,Northern,2014,Q-Fever,0,0.0
+842,Eastern,2017,Measles,0,0.0
+843,Northern,2016,Pertussis,9,6.1
+844,Eastern,2014,Group A Streptococcal Disease Invasive -> Severe,2,1.2
+845,Nova Scotia,2016,Shellfish Poisoning,0,0.0
+846,Western,2016,Shellfish Poisoning,0,0.0
+847,Central,2016,Tetanus,0,0.0
+848,Central,2015,Tuberculosis,6,1.4
+849,Nova Scotia,2017,Methicillin Resistant Staphylococcus Aureus (MRSA),522,54.7
+850,Central,2015,N/A,40,8.9
+851,Central,2016,Shellfish Poisoning,0,0.0
+852,Central,2014,Group B Streptococcal Disease of the Newborn,0,0.0
+853,Western,2017,Listeriosis - Invasive,0,0.0
+854,nan,2014,Giardiasis,41,9.7
+855,Western,2017,Tetanus,0,0.0
+856,Central,2014,Clostridium difficile,255,60.5
+857,Central,2014,Gonorrhea,90,21.3
+858,Eastern,2015,Group A Streptococcal Disease Invasive -> non-Severe,1,0.6
+859,Nova Scotia,2016,Tetanus,0,0.0
+860,Central,2015,Group A Streptococcal Disease Invasive -> non-Severe,12,2.7
+861,Northern,2014,Shellfish Poisoning,0,0.0
+862,Nova Scotia,2017,Tetanus,0,0.0
+863,Northern,2017,Syphilis - Non-Infectious or Stage Pending,2,1.3
+864,Northern,2015,Hepatitis C,75,50.3
+865,Northern,2015,Rubella,0,0.0
+866,Northern,2015,Group A Streptococcal Disease Invasive -> Severe,4,2.7
+867,Western,2015,Methicillin Resistant Staphylococcus Aureus (MRSA),178,90.9
+868,Nova Scotia,2014,Toxoplasmosis,3,0.3
+869,Central,2016,Lyme Disease - Confirmed,22,4.9
+870,Western,2015,Syphilis - Non-Infectious or Stage Pending,1,0.5
+871,Eastern,2014,Salmonellosis,36,21.7
+872,Central,2016,Human Immunodeficiency Virus,11,2.5
+873,Nova Scotia,2017,Cyclosporiasis,2,0.2
+874,Northern,2017,Typhoid,0,0.0
+875,Eastern,2014,Chlamydia,292,176.2
+876,Nova Scotia,2014,Vancomycin resistant Enterococcus (VRE),17,-1.8
+877,Central,2017,Meningitis - Bacterial,0,0.0
+878,Western,2015,Salmonellosis,44,22.5
+879,Western,2016,Pertussis,32,16.3
+880,Northern,2017,Giardiasis,8,5.4
+881,Eastern,2017,Cyclosporiasis,0,0.0
+882,Nova Scotia,2017,Mumps,21,2.2
+883,Western,2014,Cryptosporidiosis,7,3.6
+884,Eastern,2017,West Nile Virus,0,0.0
+885,Eastern,2014,Meningitis - Viral,0,0.0
+886,Eastern,2017,Hepatitis A,0,0.0
+887,Nova Scotia,2016,,1,0.1
+888,Nova Scotia,2015,Group B Streptococcal Disease of the Newborn,3,0.3
+889,Western,2017,Pertussis,27,13.9
+890,Western,2017,Typhoid,1,0.5
+891,Nova Scotia,2014,Yersiniosis,2,0.2
+892,Eastern,2014,Pneumococcal Disease Invasive,11,6.6
+893,Eastern,2015,Hepatitis C,122,76.7
+894,Northern,2015,Vancomycin resistant Enterococcus (VRE),0,0.0
+895,Western,2016,Hepatitis B - Acute,2,1.0
+896,Nova Scotia,2015,Cyclosporiasis,3,0.3
+897,Western,2015,Shellfish Poisoning,0,0.0
+898,Northern,2015,Listeriosis - Invasive,0,0.0
+899,Nova Scotia,2015,Hepatitis A,1,0.1
+900,Western,2014,Meningitis - Viral,1,0.5
+901,Westfrn,2015,Influenza,146,74.6
+902,Central,2017,Group B Streptococcal Disease of the Newborn,2,0.4
+903,Central,2017,Botulism,0,0.0
+904,Central,2016,Vancomycin resistant Enterococcus (VRE),5,1.1
+905,Western,2017,Verotoxigenic E. coli,1,0.5
+906,Nova Scotia,2014,Hepatitis B - Acute,4,0.4
+907,Nova Scotia,2015,West Nile Virus,0,0.0
+908,Central,2015,Tetanus,0,0.0
+909,Nova Scotia,2017,Lyme Disease - Probable,279,29.2
+910,Northern,2017,Group A Streptococcal Disease Invasive -> Severe,5,3.4
+911,Eastern,2014,Syphilis - Infectious,4,2.4
+912,Central,2017,Mumps,21,4.6
+913,Nova Scotia,2015,Gonorrhea,133,14.1
+914,Northern,2016,Verotoxigenic E. coli,0,0.0

@@ -1,0 +1,550 @@
+,Sex,Year,Disease,Number of Cases,"Rate per 100,000 population"
+0,Female,2014,Listeriosis - Invasive,3,0.6
+1,All,2017,Salmonellosis,171,17.9
+2,Male,2014,Typhoid,0,0.0
+3,Male,2015,Tuberculosis,5,1.1
+4,All,2014,Rubella,0,0.0
+5,Female,2014,Legionellosis,1,0.2
+6,All,2017,Hepatitis B - Chronic,18,1.9
+7,Male,2014,Shellfish Poisoning,0,0.0
+8,Male,2017,Legionellosis,7,1.5
+9,Female,2015,Giardiasis,34,7.1
+10,Male,2015,Influenza,310,67.1
+11,All,2017,Campylobacteriosis,185,19.4
+12,Male,2014,Campylobacteriosis,94,20.5
+13,All,2015,Campylobacteriosis,155,16.4
+14,All,2015,Pneumococcal Disease Invasive,52,5.5
+15,Male,2015,Cyclosporiasis,1,0.2
+16,All,2017,Hepatitis A,2,0.2
+17,All,2015,Pertussis,110,11.7
+18,Female,2017,Legionellosis,2,0.4
+19,All,2015,Shellfish Poisoning,0,0.0
+20,Male,2015,Listeriosis - Invasive,6,1.3
+21,All,2017,Mumps,21,2.2
+22,Male,2017,Malaria,2,0.4
+23,All,2016,Hepatitis B - Acute,10,1.1
+24,All,2016,Clostridium difficile,874,92.0
+25,All,2015,Cryptosporidiosis,17,1.8
+26,Male,2017,Pneumococcal Disease Invasive,19,4.1
+27,All,2014,Lyme Disease - Confirmed,68,7.2
+28,Female,2017,West Nile Virus,0,0.0
+29,All,2017,Tuberculosis,8,0.8
+30,All,,Q-Fever,0,0.0
+31,All,2016,Hepatitis A,11,1.2
+32,Male,2016,Syphilis - Non-Infectious or Stage Pending,12,2.6
+33,Female,2014,Toxoplasmosis,1,0.2
+34,All,2014,Lymphogranuloma Venereum,0,0.0
+35,Female,2015,Typhoid,0,0.0
+36,All,2015,Chlamydia,2860,303.3
+37,Male,2017,Pertussis,18,3.8
+38,Male,2014,Clostridium difficile,264,57.4
+39,Female,2015,Tetanus,0,0.0
+40,All,2016,Vancomycin Resistant Enterococcus,13,1.4
+41,All,2017,Giardiasis,93,9.7
+42,All,2014,Clostridium difficile,609,64.9
+43,All,2017,Botulism,0,0.0
+44,All,2015,Typhoid,0,0.0
+45,Male,2014,Q-Fever,0,0.0
+46,All,2016,Chlamydia,2931,308.7
+47,Male,2014,Meningococcal Disease Invasive,3,0.7
+48,Male,2017,Tetanus,0,0.0
+49,All,2015,Syphilis - Infectious,43,4.6
+50,All,2017,Meningitis - Bacterial,1,0.1
+51,Male,2015,Haemophilus influenzae Type b Invasive Disease,0,0.0
+52,All,2017,Cryptosporidiosis,41,4.3
+53,Female,2017,Syphilis - Non-Infectious or Stage Pending,1,0.2
+54,Male,2015,Acquired Immune Deficiency Syndrome,3,0.6
+55,Male,2015,West Nile Virus,0,0.0
+56,Male,2017,Meningitis - Bacterial,0,0.0
+57,All,2016,Legionellosis,1,0.1
+58,All,2017,Shigellosis,10,1.0
+59,All,2017,Measles,29,3.0
+60,Female,2015,Group A Streptococcal Disease Invasive -> non-Severe,4,0.8
+61,All,2016,Botulism,0,0.0
+62,Male,2014,Gonorrhea,79,17.2
+63,All,2014,Salmonellosis,204,21.7
+64,Male,2015,Clostridium difficile,332,71.9
+65,Female,2014,Meningococcal Disease Invasive,0,0.0
+66,Male,2014,Yersiniosis,0,0.0
+67,Female,2016,N/A,0,0.0
+68,Male,2014,Encephalitis - Viral,1,0.2
+69,All,2014,Chlamydia,2628,279.9
+70,Female,2016,Hepatitis B - Chronic,5,1.0
+71,All,2015,Human Immunodeficiency Virus,17,1.7
+72,Female,2014,Yersiniosis,2,0.4
+73,All,2014,Cryptosporidiosis,32,3.4
+74,Male,2014,Giardiasis,56,12.2
+75,Female,2017,Methicillin Resistant Staphylococcus Aureus,254,52.3
+76,Male,2014,Hepatitis A,3,0.7
+77,Male,2016,Mumps,0,0.0
+78,Male,2016,Gonorrhea,130,27.9
+79,Female,2016,Hepatitis C,95,19.6
+80,Female,2016,Haemophilus influenzae Type b Invasive Disease,0,0.0
+81,Female,2014,Lyme Disease - Probable,22,-4.6
+82,Male,2016,Acquired Immune Deficiency Syndrome,1,0.2
+83,All,2016,Verotoxigenic E.coli,5,0.5
+84,Male,2016,Meningococcal Disease Invasive,2,0.4
+85,All,2017,Typhoid,2,0.2
+86,Female,2017,Vancomycin Resistant Enterococcus,59,12.1
+87,All,2015,Methicillin Resistant Staphylococcus Aureus,625,66.3
+88,Male,2016,Salmonellosis,68,14.6
+89,Female,2016,Methicillin Resistant Staphylococcus Aureus,263,54.3
+90,Male,2016,Shigellosis,4,0.9
+91,Male,2016,Pneumococcal Disease Invasive,32,6.9
+92,Female,2015,Haemophilus influenzae Type b Invasive Disease,0,0.0
+93,All,2017,Verotoxigenic E.coli,21,2.2
+94,Als,2017,Lyme Disease - Probable,279,29.2
+95,All,2016,Shigellosis,10,1.1
+96,Female,2016,Chlamydia,1950,402.8
+97,Male,2016,Verotoxigenic E.coli,2,0.4
+98,Female,2014,Acquired Immune Deficiency Syndrome,0,0.0
+99,Female,2016,Group B Streptococcal Disease of the Newborn,1,0.2
+100,Male,2014,Human Immunodeficiency Virus,10,2.2
+101,Male,2014,Rubella,0,0.0
+102,Female,2015,Pertussis,47,9.8
+103,All,2016,Human Immunodeficiency Virus,16,1.7
+104,Male,2017,Hepatitis B - Acute,5,1.1
+105,All,2015,Verotoxigenic E.coli,5,0.5
+106,Male,2016,Group A Streptococcal Disease Invasive -> Severe,5,1.1
+107,Female,2014,Giardiasis,34,7.1
+108,All,2016,Pertussis,63,6.6
+109,Male,2015,Acute Flaccid Paralysis,0,0.0
+110,Female,2014,Syphilis - Non-Infectious or Stage Pending,9,1.9
+111,Male,2014,West Nile Virus,0,0.0
+112,All,2014,Toxoplasmosis,3,0.3
+113,All,2016,Pneumococcal Disease Invasive,66,7.0
+114,Male,2017,Salmonellosis,77,16.5
+115,All,2017,Lyme Disease - Confirmed,307,32.2
+116,Male,2017,Giardiasis,52,11.1
+117,Male,,Hepatitis A,1,0.2
+118,All,2016,Cryptosporidiosis,27,2.8
+119,Male,2016,Hepatitis B - Chronic,8,1.7
+120,All,2015,Cyclosporiasis,3,0.3
+121,All,2017,Vancomycin Resistant Enterococcus,121,12.7
+122,Female,2014,Hepatitis C,116,24.2
+123,Male,2017,Human Immunodeficiency Virus,14,3.0
+124,Female,2014,Lymphogranuloma Venereum,0,0.0
+125,NULL,2015,Giardiasis,53,11.5
+126,Female,2017,Tuberculosis,1,0.2
+127,Male,2016,Creutzfeldt-Jakob Disease - Classic,1,0.2
+128,Female,2015,Hepatitis B - Acute,2,0.4
+129,All,2014,Botulism,0,0.0
+130,Male,2017,Acquired Immune Deficiency Syndrome,1,0.2
+131,Male,2014,Mumps,0,0.0
+132,Female,2017,Hepatitis B - Chronic,11,2.3
+133,Female,2016,Pneumococcal Disease Invasive,34,7.0
+134,All,2016,Gonorrhea,202,21.3
+135,Male,2015,Chlamydia,944,204.3
+136,Female,2016,Tuberculosis,1,0.2
+137,All,2014,Tetanus,0,0.0
+138,Female,2015,Clostridium difficile,480,99.8
+139,Female,2014,Hepatitis B - Chronic,6,1.3
+140,Male,2017,West Nile Virus,0,0.0
+141,Male,2017,Group B Streptococcal Disease of the Newborn,1,0.2
+142,All,2016,Grodp A Styeptococcal Diseake Invaoive -x nou - Sevede,12,1.3
+143,Female,2017,Cryptosporidiosis,23,4.7
+144,Female,2015,Human Immunodeficiency Virus,2,0.4
+145,All,2014,Verotoxigenic E.coli,10,1.1
+146,Female,2014,Typhoid,2,0.4
+147,Male,2016,Tuberculosis,1,0.2
+148,Male,2014,Tuberculosis,6,1.3
+149,Male,2014,Group B Streptococcal Disease of the Newborn,0,0.0
+150,All,2015,Hepatitis B - Chronic,9,nan
+151,Female,2014,Methicillin Resistant Staphylococcus Aureus,314,65.5
+152,Female,2014,Verotoxigenic E.coli,6,1.3
+153,All,2015,Legionellosis,7,0.7
+154,All,2015,Group A Streptococcal Disease Invasive -> non-Severe,15,1.6
+155,All,2015,West Nile Virus,0,0.0
+156,Female,2015,Legionellosis,3,0.6
+157,All,2014,Tuberculosis,7,0.7
+158,All,2017,Group B Streptococcal Disease of the Newborn,9,0.9
+159,Male,2014,Amebiasis,1,0.2
+160,Male,2014,Hepatitis B - Chronic,14,3.0
+161,All,2014,Hepatitis B - Chronic,20,2.1
+162,Female,2016,Syphilis - Infectious,1,0.2
+163,All,2015,Vancomycin Resistant Enterococcus,4,0.4
+164,Female,2015,Acute Flaccid Paralysis,0,
+165,Female,2016,Campylobacteriosis,81,16.7
+166,Female,2015,Gonorrhea,55,11.4
+167,All,2014,Legionellosis,3,0.3
+168,Female,2017,Typhoid,0,0.0
+169,Female,2015,Meningococcal Disease Invasive,NULL,0.8
+170,,2016,Malaria,4,0.9
+171,Female,2017,Chlamydia,1987,408.8
+172,Male,2016,Acute Flaccid Paralysis,0,0.0
+173,NA,2016,Hepatitis B - Acute,6,1.3
+174,Female,2017,Gonorrhea,88,18.1
+175,Female,2014,Haemophilus influenzae Type b Invasive Disease,0,0.0
+176,Female,2014,Q-Fever,0,0.0
+177,All,2015,Mumps,6,nan
+178,All,2014,Vancomycin Resistant Enterococcus,17,1.8
+179,Male,2016,Meningitis - Bacterial,0,0.0
+180,Female,2017,Creutzfeldt-Jakob Disease - Classic,1,0.2
+181,Female,2017,Malaria,1,0.2
+182,Female,2017,Measles,15,3.1
+183,Female,2015,Creutzfeldt-Jakob Disease - Classic,0,0.0
+184,All,2016,Syphilis - Infectious,18,1.9
+185,Male,2016,Pertussis,25,5.4
+186,Female,2014,Tuberculosis,1,0.2
+187,Male,2015,Campylobacteriosis,95,20.6
+188,All,2015,Hepatitis C,357,37.9
+189,Male,2015,Legionellosis,4,0.9
+190,All,2014,Toxoplasmosis,3,0.3
+191,All,2016,West Nile Virus,0,0.0
+192,Female,2014,Influenza,152,NULL
+193,Male,2016,West Nile Virus,0,0.0
+194,Male,2014,Creutzfeldt-Jakob Disease - Classic,1,0.2
+195,All,2017,Cyclosporiasis,2,0.2
+196,Female,2016,Hepatitis A,6,1.2
+197,All,2017,Syphilis - Non-Infectious or Stage Pending,12,1.3
+198,Female,2014,Pneumococcal Disease Invasive,26,5.4
+199,All,2014,Cyclosporiasis,1,0.1
+200,All,2014,Group A Streptococcal Disease Invasive -> Severe,8,0.9
+201,Female,2016,Group A Streptococcal Disease Invasive -> non-Severe,4,0.8
+202,All,2014,Shellfish Poisoning,0,0.0
+203,All,2016,Acute Flaccid Paralysis,0,0.0
+204,Female,2014,Hepatitis B - Acute,1,0.2
+205,All,2015,Clostridium difficile,812,86.1
+206,Female,2016,Gonorrhea,72,14.9
+207,All,2016,Legionellosis,1,0.1
+208,Female,2017,Meningitis - Bacterial,1,0.2
+209,All,2014,Hepatitis B - Acute,4,0.4
+210,Male,2014,Lyme Disease - Probable,25,5.4
+211,Male,2015,Methicillin Resistant Staphylococcus Aureus,334,72.3
+212,Male,2015,Gonorrhea,78,16.9
+213,Male,2014,Tetanus,0,0.0
+214,All,2016,Creutzfeldt-Jakob Disease - Classic,1,0.1
+215,All,2014,Acute Flaccid Paralysis,1,0.1
+216,Female,2014,,0,0.0
+217,All,2014,Campylobacteriosis,180,19.2
+218,All,2016,Syphilis - Non-Infectious or Stage Pending,17,1.8
+219,All,2014,Creutzfeldt-Jakob Disease - Classic,2,0.2
+220,Male,2015,Group B Streptococcal Disease of the Newborn,2,0.4
+221,Female,2016,Cyclosporiasis,2,0.4
+222,All,2014,Human Immunodeficiency Virus,10,1.1
+223,Male,2016,Shellfish Poisoning,0,0.0
+224,Female,2016,Influenza,173,35.7
+225,Female,2016,Syphilis - Non-Infectious or Stage Pending,5,1.0
+226,All,2017,Group A Streptococcal Disease Invasive -> non-Severe,30,3.1
+227,All,2016,Shellfish Poisoning,0,0.0
+228,NULL,2017,Gonorrhea,145,31.0
+229,Female,2014,Botulism,0,0.0
+230,Male,2017,Cryptosporidiosis,18,3.8
+231,Male,2017,,0,0.0
+232,Male,2014,Acute Flaccid Paralysis,0,0.0
+233,Male,2014,Hepatitis E,0,0.0
+234,Female,2015,Tuberculosis,1,0.2
+235,Female,2016,Cyclosporiasis,2,0.4
+236,All,2017,Syphilis - Infectious,26,2.7
+237,Male,2015,Pertussis,63,13.6
+238,All,2017,Acquired Immune Deficiency Syndrome,1,NA
+239,Female,2017,Pneumococcal Disease Invasive,30,6.2
+240,Female,2014,West Nile Virus,0,0.0
+241,Male,2017,Vancomycin Resistant Enterococcus,62,13.3
+242,All,2016,Acquired Immune Deficiency Syndrome,1,0.1
+243,Female,2017,Mumps,5,1.0
+244,Female,2015,Hepatitis C,121,25.2
+245,Female,2016,Typhoid,0,0.0
+246,Male,2015,Verotoxigenic E.coli,2,0.4
+247,All,2017,Gonorrhea,233,24.4
+248,Male,2014,Pneumococcal Disease Invasive,40,8.7
+249,Female,2015,Verotoxigenic E.coli,3,0.6
+250,Male,2015,Salmonellosis,79,17.1
+251,All,2014,Syphilis - Infectious,63,6.7
+252,Female,2016,Pertussis,38,7.8
+253,Male,2017,Meningococcal Disease Invasive,5,1.1
+254,Male,2015,Group A Streptococcal Disease Invasive -> Severe,7,1.5
+255,Female,2014,Chlamydia,1783,372.1
+256,Male,2017,Typhoid,2,0.4
+257,Male,2014,Botulism,0,0.0
+258,Male,2014,Chlamydia,843,183.4
+259,All,2015,Meningitis - Bacterial,0,0.0
+260,All,2017,Hepatitis B - Acute,6,0.6
+261,All,2017,Group A Streptococcal Disease Invasive -> Severe,16,1.7
+262,All,2017,Methicillin Resistant Staphylococcus Aureus,522,54.7
+263,Male,2014,Shigellosis,6,1.3
+264,Female,2016,Salmonellosis,71,14.7
+265,Female,2015,Methicillin Resistant Staphylococcus Aureus,291,60.5
+266,Male,2015,Mumps,5,1.1
+267,Female,2017,Campylobacteriosis,88,18.1
+268,Male,2014,Malaria,3,0.7
+269,Male,2014,Meningitis - Bacterial,1,0.2
+270,Male,2017,Shigellosis,5,1.1
+271,Female,2017,Group A Streptococcal Disease Invasive -> non-Severe,14,2.9
+272,Female,2016,Group A Streptococcal Disease Invasive -> Severe,2,0.4
+273,Male,2016,Group A Streptococcal Disease Invasive -> non-Severe,8,1.7
+274,Male,2017,Lyme Disease - Confirmed,191,40.8
+275,All,2014,Acquired Immune Deficiency Syndrome,2,0.2
+276,All,2016,Hepatitis B - Chronic,13,1.4
+277,Male,2017,Clostridium difficile,389,83.1
+278,Female,2017,Cyclosporiasis,1,0.2
+279,All,2016,Giardiasis,100,10.5
+280,All,2015,Salmonellosis,169,17.9
+281,Male,2014,Syphilis - Infectious,60,13.1
+282,All,2017,Legionellosis,9,0.9
+283,N/A,2015,Creutzfeldt-Jakob Disease - Classic,0,0.0
+284,All,2016,Meningitis - Bacterial,0,0.0
+285,All,2017,Pertussis,45,4.7
+286,Male,2016,Vancomycin Resistant Enterococcus,9,1.9
+287,Female,2016,Shellfish Poisoning,0,0.0
+288,Female,2014,Tetanus,0,0.0
+289,Male,2016,Haemophilus influenzae Type b Invasive Disease,0,0.0
+290,Female,2015,Listeriosis - Invasive,2,0.4
+291,Female,2017,Meningococcal Disease Invasive,1,0.2
+292,Female,2015,Botulism,0,0.0
+293,All,2017,Human Immunodeficiency Virus,15,1.6
+294,Male,2016,Cryptosporidiosis,16,3.4
+295,Female,2016,Rubella,0,0.0
+296,Male,2016,Tetanus,0,0.0
+297,Female,2014,Rubella,0,0.0
+298,Male,2014,Influenza,120,26.1
+299,Female,2014,Salmonellosis,109,22.7
+300,All,2015,Acquired Immune Deficiency Syndrome,3,0.3
+301,All,2014,Meningitis - Viral,15,
+302,Female,2014,Amebiasis,2,0.4
+303,Male,2016,Typhoid,1,0.2
+304,Female,2016,Shigellosis,6,1.2
+305,Male,2017,Mumps,16,3.4
+306,Female,2015,Vancomycin Resistant Enterococcus,2,0.4
+307,Male,2017,Cyclosporiasis,1,0.2
+308,All,2016,Campylobacteriosis,170,17.9
+309,All,2015,Influenza,718,76.1
+310,Female,2016,Malaria,2,0.4
+311,Female,2014,Cyclosporiasis,1,0.2
+312,Female,2015,Meningitis - Bacterial,0,0.0
+313,All,2014,Influenza,272,29.0
+314,Female,2016,Botulism,0,0.0
+315,All,2014,Group A Streptococcal Disease Invasive -> non-Severe,14,1.5
+316,Male,2017,Syphilis - Infectious,25,5.3
+317,Male,2015,Hepatitis C,236,51.1
+318,All,2015,Lyme Disease - Confirmed,124,13.1
+319,All,2016,Meningococcal Disease Invasive,4,0.4
+320,Female,2017,Hepatitis C,114,23.5
+321,Female,2015,Pneumococcal Disease Invasive,18,3.7
+322,Male,2014,Group A Streptococcal Disease Invasive -> non-Severe,5,1.1
+323,Female,2017,Lyme Disease - Probable,N/A,25.1
+324,Female,2015,Group A Streptococcal Disease Invasive -> Severe,3,0.6
+325,Male,2014,Toxoplasmosis,2,0.4
+326,All,2016,Mumps,1,0.1
+327,Male,2016,Influenza,152,32.7
+328,Male,2014,Lyme Disease - Confirmed,35,7.6
+329,Female,2015,Cyclosporiasis,2,
+330,All,2014,Yersiniosis,2,0.2
+331,Male,2015,Hepatitis A,0,0.0
+332,Male,2017,Measles,14,-3.0
+333,All,2015,Meningococcal Disease Invasive,7,0.7
+334,Male,2016,Campylobacteriosis,89,N/A
+335,All,2017,Creutzfeldt-Jakob Disease - Classic,1,0.1
+336,Male,2015,Vancomycin Resistant Enterococcus,2,0.4
+337,All,2015,Acute Flaccid Paralysis,0,0.0
+338,All,2017,Haemophilus influenzae Type b Invasive Disease,1,0.1
+339,Female,2016,Mumps,1,0.2
+340,All,2015,Tuberculosis,6,0.6
+341,Female,2015,Malaria,3,0.6
+342,Female,2014,Campylobacteriosis,86,17.9
+343,Male,2014,Group A Streptococcal Disease Invasive -> Severe,3,0.7
+344,Male,NA,Human Immunodeficiency Virus,15,3.2
+345,Female,2015,Hepatitis A,1,0.2
+346,All,2015,Rubella,0,0.0
+347,Male,2014,Pertussis,7,1.5
+348,Male,2014,Lymphogranuloma Venereum,0,0.0
+349,Male,2016,Human Immunodeficiency Virus,12,2.6
+350,Male,2017,Group A Streptococcal Disease Invasive -> non-Severe,16,3.4
+351,Female,2017,Listeriosis - Invasive,1,0.2
+352,Female,2014,Meningitis - Bacterial,1,0.2
+353,Female,2016,Lyme Disease - Confirmed,65,13.4
+354,Female,2017,Botulism,0,0.0
+355,Female,2014,Hepatitis A,0,0.0
+356,Male,2015,Malaria,1,0.2
+357,Female,2015,Syphilis - Infectious,5,NULL
+358,Male,2016,Botulism,0,0.0
+359,Female,2014,Human Immunodeficiency Virus,0,0.0
+360,All,2015,Lyme Disease - Probable,130,13.8
+361,Female,2015,West Nile Virus,0,0.0
+362,Female,2017,Giardiasis,41,8.4
+363,All,2016,Salmonellosis,139,14.6
+364,All,2015,Syphilis - Non-Infectious or Stage Pending,28,3.0
+365,Female,2016,Vancomycin Resistant Enterococcus,4,0.8
+366,All,2014,West Nile Virus,0,0.0
+367,All,2014,Hepatitis E,0,0.0
+368,Male,2014,Syphilis - Non-Infectious or Stage Pending,28,6.1
+369,Female,2014,Group A Streptococcal Disease Invasive -> Severe,5,1.0
+370,All,2014,Gonorrhea,113,12.0
+371,All,2017,Tetanus,0,0.0
+372,All,2014,Malaria,3,0.3
+373,Female,2014,Clostridium difficile,345,72.0
+374,Male,2015,Pneumococcal Disease Invasive,34,7.4
+375,All,2016,Group B Streptococcal Disease of the Newborn,3,0.3
+376,Female,2014,Gonorrhea,34,7.1
+377,Female,2017,Verotoxigenic E.coli,13,2.7
+378,Female,2014,Lyme Disease - Confirmed,33,6.9
+379,All,2015,Hepatitis B - Acute,9,1.0
+380,Male,2015,Botulism,0,0.0
+381,All,2016,Malaria,6,0.6
+382,Male,2015,Syphilis - Infectious,38,8.2
+383,Female,2015,Shigellosis,2,0.4
+384,All,2015,Giardiasis,87,9.2
+385,Male,2017,Acute Flaccid Paralysis,0,0.0
+386,Male,2015,Shigellosis,3,0.6
+387,All,2016,Typhoid,1,0.1
+388,Female,2017,Acute Flaccid Paralysis,0,0.0
+389,Female,2014,Creutzfeldt-Jakob Disease - Classic,1,0.2
+390,Female,2015,Mumps,1,0.2
+391,Male,2015,Tetanus,0,0.0
+392,Male,2017,Hepatitis B - Chronic,7,1.5
+393,All,2016,Lyme Disease - Confirmed,165,17.4
+394,Male,2016,Legionellosis,0,0.0
+395,All,2016,Tuberculosis,2,0.2
+396,Male,2017,Hepatitis C,181,38.7
+397,Male,2014,Hepatitis B - Acute,3,0.7
+398,Female,2015,Hepatitis B - Chronic,5,1.0
+399,All,2014,Haemophilus influenzae Type b Invasive Disease,0,0.0
+400,All,2016,Group A Streptococcal Disease Invasive -> Severe,7,0.7
+401,All,2016,Hepatitis C,299,31.5
+402,All,2014,Giardiasis,90,9.6
+403,Male,2015,Meningitis - Bacterial,0,0.0
+404,Female,2016,Legionellosis,1,0.2
+405,Male,2017,Haemophilus influenzae Type b Invasive Disease,0,0.0
+406,Female,2017,Acquired Immune Deficiency Syndrome,0,0.0
+407,Female,2016,Cryptosporidiosis,11,2.3
+408,All,2015,Group A Streptococcal Disease Invasive -> Severe,10,1.1
+409,Female,2017,Shigellosis,5,1.0
+410,Male,2015,Typhoid,0,0.0
+411,All,2014,Group B Streptococcal Disease of the Newborn,1,0.1
+412,All,2014,Hepatitis A,3,0.3
+413,Male,2015,Meningococcal Disease Invasive,3,0.6
+414,All,2015,Listeriosis - Invasive,8,0.8
+415,All,2014,Hepatitis C,323,34.4
+416,Male,2015,Hepatitis B - Chronic,4,0.9
+417,Male,2017,Creutzfeldt-Jakob Disease - Classic,0,0.0
+418,All,2014,Listeriosis - Invasive,5,0.5
+419,Male,2015,Cryptosporidiosis,7,1.5
+420,Male,2014,Legionellosis,2,0.4
+421,Male,2016,Hepatitis A,5,1.1
+422,Female,2014,Vancomycin Resistant Enterococcus,10,2.1
+423,All,2014,Meningitis - Bacterial,2,0.2
+424,Male,2016,Syphilis - Infectious,17,3.7
+425,Male,2016,Hepatitis C,204,43.8
+426,All,2014,Methicillin Resistant Staphylococcus Aureus,644,68.6
+427,All,2016,Tetanus,0,0.0
+428,Female,2017,Syphilis - Infectious,1,0.2
+429,Male,2017,Verotoxigenic E.coli,8,1.7
+430,All,2017,Pneumococcal Disease Invasive,49,5.1
+431,Male,2017,Campylobacteriosis,97,20.7
+432,Male,2014,Haemophilus influenzae Type b Invasive Disease,0,0.0
+433,Male,2015,Lyme Disease - Confirmed,72,15.6
+434,Female,2015,Cryptosporidiosis,10,2.1
+435,All,2014,Amebiasis,3,0.3
+436,Male,2017,Methicillin Resistant Staphylococcus Aureus,268,57.3
+437,Male,2016,Giardiasis,65,14.0
+438,Female,2014,Pertussis,4,0.8
+439,Male,2015,Hepatitis B - Acute,7,1.5
+440,All,2014,Encephalitis - Viral,1,0.1
+441,Female,2017,Hepatitis B - Acute,1,0.2
+442,Male,2017,Group A Streptococcal Disease Invasive -> Severe,9,1.9
+443,Female,2014,Meningitis - Viral,6,1.3
+444,Female,2016,Listeriosis - Invasive,1,0.2
+445,Male,2016,Listeriosis - Invasive,3,0.6
+446,Male,2014,Acquired Immune Deficiency Syndrome,2,0.4
+447,Male,2016,Clostridium difficile,368,79.1
+448,Female,2015,Shellfish Poisoning,0,0.0
+449,Female,2016,Creutzfeldt-Jakob Disease - Classic,0,0.0
+450,All,2015,Malaria,4,0.4
+451,Female,2017,Salmonellosis,NA,19.3
+452,All,2014,Typhoid,2,0.2
+453,Female,2015,Rubella,0,0.0
+454,Male,2015,Lyme Disease - Probable,69,14.9
+455,Male,2016,Chlamydia,978,210.1
+456,Male,2016,Cyclosporiasis,0,0.0
+457,Female,2015,Chlamydia,1913,397.7
+458,Male,2016,Methicillin Resistant Staphylococcus Aureus,307,66.0
+459,Male,2015,Creutzfeldt-Jakob Disease - Classic,0,0.0
+460,Female,2015,Campylobacteriosis,60,12.5
+461,Female,2014,Shigellosis,3,N/A
+462,Female,2016,Meningococcal Disease Invasive,2,0.4
+463,All,2014,Shigellosis,9,NULL
+464,All,2017,Chlamydia,2988,313.3
+465,Female,2016,Acute Flaccid Paralysis,0,0.0
+466,All,2015,Gonorrhea,133,14.1
+467,Male,2014,Cryptosporidiosis,10,2.2
+468,All,2015,Tetanus,0,0.0
+469,Male,2014,Methicillin Resistant Staphylococcus Aureus,330,71.8
+470,Female,2016,Tetanus,0,0.0
+471,Female,2016,West Nile Virus,0,0.0
+472,Female,2016,N/A,35,7.2
+473,Male,2016,Group B Streptococcal Disease of the Newborn,2,0.4
+474,Fepale,2015,Influenza,408,84.8
+475,Female,2017,Group B Streptococcal Disease of the Newborn,2,0.4
+476,Male,2016,Rubella,0,0.0
+477,Female,2015,Lyme Disease - Probable,61,12.7
+478,All,2014,Lyme Disease - Probable,47,5.0
+479,Female,2015,Syphilis - Non-Infectious or Stage Pending,5,1.0
+480,All,2016,Methicillin Resistant Staphylococcus Aureus,570,60.0
+481,Female,2016,Meningitis - Bacterial,0,0.0
+482,All,2017,West Nile Virus,0,0.0
+483,All,2014,Pertussis,-11,1.2
+484,Female,2014,Mumps,1,0.2
+485,All,2014,Meningococcal Disease Invasive,3,0.3
+486,Female,2017,Pertussis,27,5.6
+487,Male,2015,Rubella,0,0.0
+488,All,2015,Haemophilus influenzae Type b Invasive Disease,0,0.0
+489,All,2016,Lyme Disease - Probable,161,17.0
+490,Male,2014,Listeriosis - Invasive,2,0.4
+491,Female,2017,Tetanus,0,0.0
+492,Female,2014,Acute Flaccid Paralysis,1,0.2
+493,All,2017,Malaria,3,0.3
+494,Female,2017,Haemophilus influenzae Type b Invasive Disease,1,0.2
+495,Female,2017,Human Immunodeficiency Virus,1,0.2
+496,Female,2016,N/A,4,0.8
+497,All,2015,Hepatitis A,1,0.1
+498,Female,2014,Shellfish Poisoning,0,0.0
+499,Female,2014,Hepatitis E,0,0.0
+500,Female,2017,Group A Streptococcal Disease Invasive -> Severe,7,1.4
+501,Female,2015,Acquired Immune Deficiency Syndrome,0,0.0
+502,All,2014,Syphilis - Non-Infectious or Stage Pending,37,3.9
+503,Female,2016,Verotoxigenic E.coli,3,0.6
+504,Female,2016,Lyme Disease - Probable,67,13.8
+505,Male,2014,Vancomycin Resistant Enterococcus,7,1.5
+506,All,2017,Acute Flaccid Paralysis,0,0.0
+507,Female,2017,Lyme Disease - Confirmed,116,23.9
+508,All,2016,Haemophilus influenzae Type b Invasive Disease,0,0.0
+509,Male,2015,Syphilis - Non-Infectious or Stage Pending,23,5.0
+510,Male,2015,Shellfish Poisoning,0,0.0
+511,Female,2014,Group B Streptococcal Disease of the Newborn,1,0.2
+512,Male,2017,Listeriosis - Invasive,3,0.6
+513,Male,2014,Meningitis - Viral,9,2.0
+514,All,2016,Cyclosporiasis,2,0.2
+515,All,2016,Rubella,0,0.0
+516,All,2015,Botulism,0,0.0
+517,Female,2017,Clostridium difficile,538,110.7
+518,All,2014,Pneumococcal Disease Invasive,66,7.0
+519,All,2017,Clostridium difficile,927,97.2
+520,All,2014,Mumps,1,0.1
+521,Female,2014,Group A Streptococcal Disease Invasive -> non-Severe,9,1.9
+522,All,2015,Shigellosis,5,0.5
+523,Male,2017,Tuberculosis,7,1.5
+524,All,2017,Listeriosis - Invasive,4,0.4
+525,Female,2014,Malaria,0,0.0
+526,Female,2016,Clostridium difficile,506,104.5
+527,Female,2015,Group B Streptococcal Disease of the Newborn,1,0.2
+528,Male,2015,Group A Streptococcal Disease Invasive -> non-Severe,11,2.4
+529,All,2016,Influenza,325,34.2
+530,Male,2017,Syphilis - Non-Infectious or Stage Pending,11,2.4
+531,Male,2016,Lyme Disease - Confirmed,100,21.5
+532,Male,2014,Verotoxigenic E.coli,4,0.9
+533,Female,2017,Hepatitis A,1,0.2
+534,Male,2017,Chlamydia,999,213.5
+535,Female,2014,Syphilis - Infectious,3,0.6
+536,Male,2014,Cyclosporiasis,0,0.0
+537,All,2017,Meningococcal Disease Invasive,6,0.6
+538,Female,2015,Salmonellosis,90,18.7
+539,Male,2014,Salmonellosis,95,20.7
+540,Male,2017,Lyme Disease - Probable,157,33.6
+541,All,2016,Listeriosis - Invasive,4,0.4
+542,Female,2015,Lyme Disease - Confirmed,52,10.8
+543,All,2017,Hepatitis C,295,30.9
+544,Female,2014,Cryptosporidiosis,22,4.6
+545,All,2015,Group B Streptococcal Disease of the Newborn,3,0.3
+546,Male,2014,Hepatitis C,207,45.0
+547,Male,2016,Lyme Disease - Probable,94,20.2
+548,Female,2016,Hepatitis B - Acute,4,0.8

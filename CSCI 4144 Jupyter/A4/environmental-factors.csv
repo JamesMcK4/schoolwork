@@ -1,0 +1,25 @@
+﻿Entity,Year,Freshwater use (m3 / kg edible weight),Nitrogen (kgN / t edible weight),Land use (m2 / kg edible weight),Greenhouse gas emissions (kg / kg edible weight)
+Bivalves (farmed),2021,0,-129.8268507,0,1.39912623
+Carp (farmed),2021,3.522775104,147.7959175,11.41382258,6.946922702
+Catfish (farmed),2021,2.0944458,132.8816973,10.44965342,7.774491103
+Chicken,2021,0.4547,204.1,14.525,8.335
+Milkfish (farmed),2021,0.28291342,146.5361472,18.53203141,6.434886518
+Other freshwater fish (farmed),2021,0.362880363,156.05219,9.783293339,18.90592209
+Other marine fish (farmed),2021,0.40139472,234.552923,10.82317774,11.59517858
+Salmon (farmed),2021,0.155711472,110.5565086,4.862073968,5.100985973
+Seaweed (farmed),2021,0,-14.65288469,0,1.086722561
+Shrimp (farmed),2021,0.219165334,123.0370341,13.17613793,9.428015643
+Silver/bighead (farmed),2021,9.277279692,43.2844742,8.254630327,3.510591001
+Tilapia (farmed),2021,1.230467594,199.8315172,15.27297706,10.67598157
+Trout (farmed),2021,0.112580508,98.88904,3.81244393,5.409547178
+Bivalves (wild),2021,,,,11.40004939
+"Cod, haddock (wild)",2021,,,,5.125038766
+Flounder (wild),2021,,,,20.31331444
+"Herring, sardines (wild)",2021,,,,3.877940448
+Jack fish (wild),2021,,,,9.665174349
+Lobster (wild),2021,,,,19.44495157
+"Redfish, bass (wild)",2021,,,,9.914649563
+"Salmon, trout (wild)",2021,,,,6.881338695
+Shrimp (wild),2021,,,,11.95673939
+Squid (wild),2021,,,,8.184950304
+Tuna (wild),2021,,,,7.629053804
